@@ -9,7 +9,7 @@ import {
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
-  Button,
+  
   DropdownSection,
 } from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
@@ -17,7 +17,7 @@ import Dropdowns from "./ui/dropdown";
 
 const Header = () => {
   return (
-    <header className="top-0  fixed pt-5 w-full z-[900]">
+    <header className="top-0 fixed pt-5 px-2 w-full z-[900]">
       <div className="py-1.5 px-3 flex shadow-sm justify-between mx-auto w-full max-w-[984px] bg-white/40 backdrop-blur-xl items-center rounded-full border-zinc-200 border">
         {/* Logo and Menu for Small Screens */}
         <div className="icon flex items-center">
