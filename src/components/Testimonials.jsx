@@ -1,7 +1,8 @@
 
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import TestimonialCard from "./ui/testimonialcard";
+import { TestimonialCard } from "./ui/card";
+
 import "swiper/css";
 import {ArrowLeftIcon,  ArrowRightIcon } from "@heroicons/react/24/outline";
 
@@ -56,7 +57,7 @@ function Testimonial() {
 
   return (
     <section
-    className="relative w-full bg-gray-100 pt-28 pb-16"
+    className="relative w-full bg-gray-50 pt-28 pb-16"
     
     initial="hidden"
     whileInView="show"

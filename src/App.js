@@ -1,25 +1,16 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import { BackgroundLinesDemo } from "./components/BackgroundLinesDemo";
-import { WhatWeDoSection } from "./components/WhatWeDoSection";
-import AboutUsSection from "./components/AboutUsSection";
-import Testimonial from "./components/Testimonials";
-import WhyChooseUs from "./components/WhyChooseUs";
 
+import Header from './components/Header'
+import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="h-screen">
-      <Navbar />
-      <BackgroundLinesDemo />
-      <WhatWeDoSection />
-      <AboutUsSection />
-      <WhyChooseUs/>
-      <Testimonial/>
-       
-       
+    <div className='h-screen'>
+    <Header/>
+      <Outlet/>
+    <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

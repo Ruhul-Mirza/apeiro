@@ -5,7 +5,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
-import AboutCard from "./ui/aboutcard";
+import { AboutCard } from "./ui/card";
 
 const AboutUsSection = () => {
   const aboutCards = [
