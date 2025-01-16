@@ -1,38 +1,38 @@
 import React from 'react';
-import { CurrencyDollarIcon, LightBulbIcon, CheckCircleIcon, ClipboardDocumentListIcon, GlobeAltIcon, ShieldExclamationIcon } from '@heroicons/react/24/outline';
+import {PuzzlePieceIcon, RocketLaunchIcon, TrophyIcon, CogIcon, LifebuoyIcon, WalletIcon } from '@heroicons/react/24/outline';
 import { WhyChooseHeader } from './AllHeader';
 
 // Card data array with Heroicons
 const cardData = [
   {
-    icon: <CurrencyDollarIcon className="h-8 w-8 text-gray-500" />,
+    icon: <WalletIcon className="h-8 w-8 text-gray-500" />,
     title: "Prioritize Budget",
-    description: "We prioritize your budget by not charging for data that doesn't yield results, reflecting our commitment to providing value."
+    description: "We provide high-quality services that fit your budget, offering scalable solutions without compromising on excellence."
   },
   {
-    icon: <LightBulbIcon className="h-8 w-8 text-gray-500" />,
-    title: "Industry Insights & Proven Strategies",
-    description: "With over a decade of experience, we bring industry insights and proven strategies to optimize results for your data list building."
+    icon: <PuzzlePieceIcon className="h-8 w-8 text-gray-500" />,
+    title: "Expertise Across Industries",
+    description: "We specialize in talent mapping, executive search, KPO services, and more, offering tailored solutions for diverse industries."
   },
   {
-    icon: <CheckCircleIcon className="h-8 w-8 text-gray-500" />,
-    title: "Verification & Accuracy",
-    description: "Our information and contact lists undergo rigorous verification by experienced compliance and quality teams, ensuring accuracy and relevance."
+    icon: <RocketLaunchIcon className="h-8 w-8 text-gray-500" />,
+    title: "Innovative Solutions",
+    description: "We leverage cutting-edge technologies and data-driven insights to deliver smarter, more efficient results."
   },
   {
-    icon: <ClipboardDocumentListIcon className="h-8 w-8 text-gray-500" />,
-    title: "Tailored Data Lists",
-    description: "Serving every industry, sector, and business size, we tailor data lists to your specific requirements, covering over 150 countries."
+    icon: <TrophyIcon className="h-8 w-8 text-gray-500" />,
+    title: "Commitment to Quality",
+    description: "We ensure high-quality service, from sourcing top talent to providing reliable data management and administrative support."
   },
   {
-    icon: <GlobeAltIcon className="h-8 w-8 text-gray-500" />,
-    title: "Global Coverage",
-    description: "We offer coverage in over 150 countries, ensuring you get the global data you need."
+    icon: <CogIcon className="h-8 w-8 text-gray-500" />,
+    title: "Customized Approach",
+    description: "Our solutions are personalized to meet your unique business needs, driving optimal performance and growth."
   },
   {
-    icon: <ShieldExclamationIcon className="h-8 w-8 text-gray-500" />,
-    title: "Compliance and Quality",
-    description: "Our lists meet the highest standards of compliance, ensuring quality and regulatory adherence."
+    icon: <LifebuoyIcon className="h-8 w-8 text-gray-500" />,
+    title: "Dedicated Support",
+    description: "We offer continuous support, ensuring seamless execution and a collaborative partnership at every stage."
   }
 ];
 

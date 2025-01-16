@@ -49,23 +49,6 @@
   animation: shimmer 3s infinite;
 }
 
-/* Refined scrollbar */
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(203, 213, 225, 0.5); /* bg-slate-300/50 */
-  border-radius: 9999px; /* Fully rounded */
-  transition: background-color 0.2s ease, backdrop-filter 0.2s ease;
-  backdrop-filter: blur(4px); /* backdrop-blur-sm */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(148, 163, 184, 0.7); /* bg-slate-400/70 */
+.your-custom-tab {
+  width: 200px;
 }

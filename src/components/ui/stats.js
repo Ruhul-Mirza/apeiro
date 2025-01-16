@@ -4,8 +4,11 @@ import { useCountUp } from "../../hooks/useCountUp";
 import {
   ChartBarSquareIcon,
   CurrencyDollarIcon,
+  DocumentCheckIcon,
+  MagnifyingGlassIcon,
   ShoppingBagIcon,
   UserCircleIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/outline";
 
 const formatValue = (value, prefix = "") => {
@@ -26,17 +29,17 @@ const StatCard = ({ icon: Icon, title, endValue, prefix = "", subtitle }) => {
   return (
     <div className="group relative bg-white/40 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/20 transition-all duration-300">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900/[0.02] to-slate-900/[0.08] opacity-100 transition-opacity duration-500"></div>
-      <div className="relative p-8">
-        <div className="flex justify-between items-start mb-6">
+      <div className="relative p-5">
+        <div className="flex flex-col items-start gap-5">
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-slate-600/20 to-slate-800/20 blur opacity-100"></div>
-            <div className="relative bg-white/80  p-2 rounded-xl">
+            <div className="relative bg-white/80 p-2 rounded-xl">
               <Icon className="w-6 h-6 text-slate-700" strokeWidth={1.5} />
             </div>
           </div>
-          <div className="space-y-0.5 text-right">
+          <div className="space-y-0.5">
             <p
-              className={`text-3xl font-bold text-slate-800 tracking-tight transition-opacity duration-500 ${
+              className={`text-4xl font-bold text-slate-800 transition-opacity duration-500 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -47,12 +50,7 @@ const StatCard = ({ icon: Icon, title, endValue, prefix = "", subtitle }) => {
             </h3>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-100 to-transparent h-px"></div>
-          <div className="pt-4">
-            <p className="text-sm text-slate-600 font-medium">{subtitle}</p>
-          </div>
-        </div>
+     
       </div>
     </div>
   );
@@ -82,29 +80,29 @@ function Stats() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatCard
             icon={UserCircleIcon}
+            title="Delighted Partners"
+            endValue={300}
+            prefix="+"
             
-            title="Active Users"
-            endValue={24850}
-            subtitle="Enterprise accounts this month"
           />
           <StatCard
-            icon={ShoppingBagIcon}
-            title="Transactions"
-            endValue={1456}
-            subtitle="Successfully processed orders"
+            icon={UserGroupIcon}
+            title="Team Members"
+            prefix="+"
+            endValue={50}
           />
           <StatCard
-            icon={CurrencyDollarIcon}
-            title="Revenue"
-            endValue={45623}
-            prefix="$"
-            subtitle="Monthly recurring revenue"
+            icon={MagnifyingGlassIcon}
+            title="Excellence Recognition"
+            endValue={100}
+            prefix="+"
           />
           <StatCard
-            icon={ChartBarSquareIcon}
-            title="Performance"
-            endValue={89.2}
-            subtitle="Overall system efficiency"
+            icon={DocumentCheckIcon}
+            title="Deliver Result"
+            prefix="M"
+            endValue={10}
+            
           />
         </div>
       </div>

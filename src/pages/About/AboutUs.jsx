@@ -2,12 +2,13 @@ import WorldMap from "../../components/ui/world-map";
 import { motion } from "motion/react";
 import smallScreen from "../../image/smallscreen.png";
 import { ChevronRightIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 export default function AboutPage() {
   return (
     <>
       <AboutUs />
-      <OurTeam/>
+      <OurTeam />
     </>
   );
 }
@@ -35,9 +36,8 @@ function AboutUs() {
           </span>
         </p>
         <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+          We provide global KPO and RPO services with a skilled team, driving
+          success and growth worldwide
         </p>
       </div>
       <WorldMap
@@ -79,38 +79,33 @@ function AboutUs() {
 }
 
 const OurTeam = () => {
- 
   const aboutCards = [
     {
-      name: "David Forren",
+      name: "Muzaffar Khatri",
       role: "Founder / CEO",
-      color:"blue",
+      color: "blue",
     },
     {
-      name: "Jane Doe",
+      name: "Aoun Mirza",
       role: "Product Manager",
-      color:"red",
+      color: "red",
     },
     {
-      name: "John Smith",
+      name: "Aslan Shaikh",
       role: "Software Engineer",
-      color:"orange",
+      color: "orange",
     },
     {
-      name: "Emily White",
+      name: "Zuaid Shaikh",
       role: "Designer",
-      color:"pink",
+      color: "pink",
     },
     {
-      name: "Michael Brown",
-      role: "Marketing Lead",
-      color:"purple",
+      name: "Ruhul Mirza",
+      role: "Software Engineer",
+      color: "purple",
     },
-    {
-      name: "Sophia Black",
-      role: "Data Analyst",
-      color:"green",
-    },
+    
   ];
   return (
     <>
@@ -126,16 +121,14 @@ const OurTeam = () => {
           <div className="flex flex-col lg:flex-row gap-8 mt-10 items-start lg:items-center">
             <div className="flex flex-col w-full lg:w-1/2 mt-8 lg:mt-0">
               <h2 className="text-xl md:text-3xl font-bold">
-                Unlock Insights with Our Expertise
+                Meet Our Team Of Experts
               </h2>
               <p className="text-gray-600 text-sm md:text-base mt-3">
-                Our expert team ensures comprehensive data research and
-                professional insights to help you succeed. Join us to experience
-                unparalleled quality and support.
+              Our team at Apeiro Research is a diverse group of skilled professionals from around the world, united by a shared commitment to excellence. Each member brings unique expertise in KPO and RPO services, working together to deliver innovative solutions and drive success for our clients.
               </p>
               <div>
                 <button className="mt-5 tracking-wide flex items-center gap-2 px-5 py-3 rounded-full text-white bg-black/90 hover:bg-black/100 font-bold">
-                  <a href="#">We're Hiring!</a>
+                  <NavLink to="/contact">Know More</NavLink>
                   <ChevronRightIcon className="h-5 w-5" />
                 </button>
               </div>
@@ -158,37 +151,34 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-      
     </>
   );
 };
 
-const AboutCard = ({ name, role,color }) => {
-  const cardthemes ={
-    pink:"hover:border-pink-400",
-    blue:"hover:border-blue-400",
-    orange:"hover:border-orange-400",
-    red:"hover:border-red-400",
-    green:"hover:border-green-400",
-    purple:"hover:border-purple-400"
-  }
+const AboutCard = ({ name, role, color }) => {
+  const cardthemes = {
+    pink: "hover:border-pink-400",
+    blue: "hover:border-blue-400",
+    orange: "hover:border-orange-400",
+    red: "hover:border-red-400",
+    green: "hover:border-green-400",
+    purple: "hover:border-purple-400",
+  };
   return (
-    <div className={`border border-zinc-200 tracking-wide rounded-xl p-5 cursor-pointer  bg-white ${cardthemes[color]}`}>
+    <div
+      className={`border border-zinc-200 tracking-wide rounded-xl p-5 cursor-pointer  bg-white ${cardthemes[color]}`}
+    >
       <div className="flex gap-6">
-
-      <div className="flex items-center justify-center h-12 w-12 bg-gray-100 rounded-full">
-        <UserCircleIcon className="h-6 w-6 text-gray-500" />
+        <div className="flex items-center justify-center h-12 w-12 bg-gray-100 rounded-full">
+          <UserCircleIcon className="h-6 w-6 text-gray-500" />
+        </div>
+        <div className="flex flex-col">
+          <div className="text-gray-700 text-sm md:text-base font-semibold">
+            {name}
+          </div>
+          <div className="text-gray-500 text-xs">{role}</div>
+        </div>
       </div>
-      <div className="flex flex-col">
-      <div className="text-gray-700 text-sm md:text-base font-semibold">
-        {name}
-      </div>
-      <div className="text-gray-500 text-xs">
-        {role}
-      </div>
-      </div>
-      </div>
-      
     </div>
   );
 };

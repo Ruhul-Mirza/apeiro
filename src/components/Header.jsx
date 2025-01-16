@@ -55,8 +55,8 @@ const Header = () => {
                   >
                     Kpo Service
                   </DropdownItem>
-                  <DropdownItem key="bpo-services" href="/bpo-service" className="border-none">
-                    Bpo Service
+                  <DropdownItem key="rpo-services" href="/rpo-service" className="border-none">
+                    Rpo Service
                   </DropdownItem>
                 </DropdownSection>
               </DropdownMenu>

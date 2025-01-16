@@ -3,8 +3,8 @@ import {BackgroundLinesDemo} from "../../components/BackgroundLinesDemo"
 import {WhatWeDoSection} from "../../components/WhatWeDoSection"
 import AboutUsSection from "../../components/AboutUsSection"
 import WhyChooseUs from "../../components/WhyChooseUs"
-import Testimonial from "../../components/Testimonials"
 import Stats from '../../components/ui/stats'
+// import Testimonial from "../../components/Testimonials"
 const Home = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Home = () => {
     <AboutUsSection/>
     <WhyChooseUs/>
     <Stats/>
-    <Testimonial/>
+    {/* <Testimonial/> */}
     </>
   )
 }

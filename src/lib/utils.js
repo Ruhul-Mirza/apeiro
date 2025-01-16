@@ -4,7 +4,23 @@ import {
   CircleStackIcon,
   BuildingOfficeIcon,
   ArrowPathIcon,
-  DocumentMagnifyingGlassIcon
+  DocumentMagnifyingGlassIcon,
+  SpeakerWaveIcon,
+  ServerStackIcon,
+  CheckIcon,
+  ChartPieIcon,
+  GlobeAltIcon,
+  QueueListIcon,
+  NumberedListIcon,
+  LightBulbIcon,
+  MagnifyingGlassIcon,
+  ChartBarIcon,
+  UsersIcon,
+  BriefcaseIcon,
+  UserPlusIcon,
+  ClipboardDocumentListIcon,
+  UserIcon,
+  DocumentPlusIcon
 } from "@heroicons/react/24/outline";
 
 import { clsx } from "clsx";
@@ -21,7 +37,7 @@ export const KPOSERVICES = [
     title: "Email List Building",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Enterprise-grade infrastructure with worldwide availability and scalability.",
+      "Targeted lists. Quality leads. Maximum impact.",
       key: "email-list",
       color:"red",
       
@@ -31,7 +47,7 @@ export const KPOSERVICES = [
     title: "Data Append",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Seamlessly connect with your existing tools and workflows through our robust API.",
+      "Enhance accuracy. Fill gaps. Boost insights.",
       key: "data-append",
       color:"orange",
       
@@ -41,7 +57,7 @@ export const KPOSERVICES = [
     title: "Data Refresh",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Foster collaboration across departments with our intuitive team features.",
+      "Update. Verify. Stay current.",
       key: "data-refresh",
       color:"green",
       
@@ -51,7 +67,7 @@ export const KPOSERVICES = [
     title: "Customize B2B Database",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Tailored approaches that align with your business objectives and brand identity.",
+      "Tailored data. Better targeting. Greater results",
       key: "customize-b2b",
       color:"blue",
       
@@ -61,7 +77,7 @@ export const KPOSERVICES = [
     title: "DataBase Building",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Accelerate your project timeline with our optimized deployment pipeline.",
+      "Accurate data. Smart solutions. Stronger connections.",
       key:"database-building",
       color:"pink",
       
@@ -71,7 +87,7 @@ export const KPOSERVICES = [
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     title: "Content Research",
     description:
-      "Stay ahead with cutting-edge features and continuous platform improvements.",
+      "Insights-driven. Well-crafted. Engaging content.",
       key:"content-research",
       color:"purple",
       
@@ -79,76 +95,177 @@ export const KPOSERVICES = [
   },
   {
     icon: EnvelopeIcon,
-    title: "Email List Building",
+    title: "LinkedIn Data Search",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Enterprise-grade infrastructure with worldwide availability and scalability.",
-      key:"email-list-building",
+      "Targeted profiles. Relevant connections. Precise insights.",
+      key:"linkedin-data",
       color:"yellow",
       
       
   },
   {
-    icon: PlusCircleIcon,
-    title: "Data Append",
+    icon: SpeakerWaveIcon,
+    title: "Lead generation",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Seamlessly connect with your existing tools and workflows through our robust API.",
-      key:"data-append",
+      "Qualified leads. Stronger opportunities. Greater conversions.",
+      key:"lead-generation",
       color:"emerald",
       
   },
   {
-    icon: ArrowPathIcon,
-    title: "Data Refresh",
+    icon: ServerStackIcon,
+    title: "Online-Offline Data entry Services",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Foster collaboration across departments with our intuitive team features.",
-      key:"data-refresh",
-      color:"indigo",
+      "Fast, accurate, and reliable data input for seamless operations.",
+      key:"online-offline",
+      color:"blue",
       
   },
   {
-    icon: CircleStackIcon,
-    title: "Customize B2B Database",
+    icon: CheckIcon,
+    title: "Data-Validation",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Tailored approaches that align with your business objectives and brand identity.",
-      key:"customize-b2b",
+      "Ensure accuracy. Eliminate errors. Strengthen decisions.",
+      key:"data-validation",
+      color:"orange",
+      
+  },
+  {
+    icon: ChartPieIcon,
+    title: "Data-Mining",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Extract valuable insights. Uncover patterns. Drive informed decisions.",
+      key:"data-mining",
       color:"maroon",
       
   },
   {
-    icon: BuildingOfficeIcon,
-    title: "DataBase Building",
+    icon: GlobeAltIcon,
+    title: "Web-Research",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Accelerate your project timeline with our optimized deployment pipeline.",
-      key:"database-building",
-      color:"cyan",
+      "Optimize content, design, and user experience.",
+      key:"web-research",
+      color:"green",
       
   },
-  
-];
-
-export const BPOSERVICES = [
   {
-    icon: EnvelopeIcon,
-    title: "Email List Building",
+    icon: QueueListIcon,
+    title: "List-Research",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Enterprise-grade infrastructure with worldwide availability and scalability.",
-      key: "email-list",
+      "Gathers data on trends, competitors, SEO, content, UX, and design to enhance the site",
+      key:"list-research",
+      color:"pink",
+      
+  },
+  {
+    icon: EnvelopeIcon,
+    title: "B2B-Email",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Connecting businesses through impactful emails",
+      key:"b2b-email",
+      color:"indigo",
+      
+  },
+];
+
+export const RPOSERVICES = [
+  {
+    icon: NumberedListIcon,
+    title: "Number Gathering",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Expertly gathering numbers for informed decisions.",
+      key: "number-gathering",
       color:"red",
   },
   {
-    icon: PlusCircleIcon,
-    title: "Data Append",
+    icon: LightBulbIcon,
+    title: "Talent Mapping",
     guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
     description:
-      "Seamlessly connect with your existing tools and workflows through our robust API.",
-      key: "data-append",
+      "Strategically mapping talent for the right fit.",
+      key: "talent-mapping",
       color:"green",
+  },
+  {
+    icon: MagnifyingGlassIcon,
+    title: "Talent Sourcing",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Connecting the right talent with the right opportunity.",
+      key: "talent-sourcing",
+      color:"indigo",
+  },
+  {
+    icon:ChartBarIcon,
+    title: "Talent Insight & Intelligence",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Unlocking talent insights for smarter decisions.",
+      key: "talent-insight",
+      color:"orange",
+  },
+  {
+    icon:UsersIcon,
+    title: "Diversity Hiring",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Fostering diverse teams for stronger innovation.",
+      key: "diversity-hiring",
+      color:"blue",
+  },
+  {
+    icon:BriefcaseIcon,
+    title: "Executive Search Support",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Empowering executive search with tailored support.",
+      key: "executive-search-support",
+      color:"pink",
+  },
+  {
+    icon:UserPlusIcon,
+    title: "Talent Pipeline",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Building a pipeline of top-tier talent for future success.",
+      key: "talent-pipeline",
+      color:"maroon",
+  },
+  {
+    icon:ClipboardDocumentListIcon,
+    title: "Recruitment Services",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Connecting the right talent with the right opportunities.",
+      key: "recruitment-services",
+      color:"emerald",
+  },
+  {
+    icon:DocumentPlusIcon,
+    title: "Talent Pooling",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Creating a pool of top talent for future growth.",
+      key: "talent-pooling",
+      color:"purple",
+  },
+  {
+    icon:UserIcon,
+    title: "Admin Support",
+    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    description:
+      "Efficient admin support to streamline your operations.",
+      key: "admin-support",
+      color:"red",
   },
 ]
 export const CompanyDropdownItems =[
@@ -172,8 +289,8 @@ export const ServicesDropdownItems =[
     href:"/kpo-service"
   },
   {
-    title:"BPO Service",
-    href:"/bpo-service"
+    title:"RPO Service",
+    href:"/rpo-service"
   },
 
   ]

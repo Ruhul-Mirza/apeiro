@@ -1,7 +1,7 @@
 import { WhatWeDoHeader } from "./AllHeader";
 import { ServiceCard } from "../pages/services/Card";
 import { Tabs, Tab } from "@nextui-org/tabs";
-import { KPOSERVICES,BPOSERVICES } from "../lib/utils";
+import { KPOSERVICES,RPOSERVICES } from "../lib/utils";
 
 const KpoCards = [
   "email-list",
@@ -10,24 +10,25 @@ const KpoCards = [
   "customize-b2b",
   "database-building",
   "content-research",
+  "linkedin-data",
+  "lead-generation"
 ];
-const BpoCards = [
-  "email-list",
-  "data-append",
-  "data-refresh",
-  "customize-b2b",
-  "database-building",
-  "content-research",
+const RpoCards = [
+  "number-gathering",
+  "talent-mapping",
+  "talent-sourcing",
+  "talent-insight",
+  "executive-search-support",
+  "recruitment-services",
 ];
 
 export function WhatWeDoSection() {
   return (
-    
       <div className="container relative mx-auto px-4 pb-1">
         <WhatWeDoHeader />
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options">
-            <Tab key="kpo-services" title="Kpo-Services">
+            <Tab key="kpo-services" title="KPO-SERVICES">
               <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {KPOSERVICES.map((service, index) => {
                   const isCardAllowed = KpoCards.includes(service.key);
@@ -52,10 +53,10 @@ export function WhatWeDoSection() {
                 })}
               </div>
             </Tab>
-            <Tab key="kbpo-services" title="Bpo-Services">
+            <Tab key="rpo-services" title="RPO-SERVICES">
               <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6">
-                {BPOSERVICES.map((service, index) => {
-                  const isCardAllowed = BpoCards.includes(service.key);
+                {RPOSERVICES.map((service, index) => {
+                  const isCardAllowed = RpoCards.includes(service.key);
                   if (!isCardAllowed) return null;
 
                   return (

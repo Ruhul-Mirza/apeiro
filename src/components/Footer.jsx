@@ -206,10 +206,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/bpo-service"
+                    to="/rpo-service"
                     className="text-gray-400 transition hover:text-black"
                   >
-                    Bpo Service
+                    Rpo Service
                   </NavLink>
                 </li>
               </ul>

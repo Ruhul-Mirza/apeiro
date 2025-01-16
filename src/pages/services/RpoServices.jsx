@@ -1,15 +1,15 @@
 import { React, useState } from "react"
-import { BPOSERVICES } from "../../lib/utils";
-import ServicesHeading from "./ServicesHeading";
+import { RPOSERVICES } from "../../lib/utils";
 import { ServiceCard } from "./Card";
+import { RpoServicesHeading } from "./ServicesHeading";
 
-const BpoServices = () => {
+const RpoServices = () => {
   return (
     <div className="bg-gray-50 bg-opacity-75">
-      <ServicesHeading />
+      <RpoServicesHeading />
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden">
         <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
-          {BPOSERVICES.map((service,index) => (
+          {RPOSERVICES.map((service,index) => (
             <ServiceCard
               key={service.key}
               icon={service.icon}
@@ -32,4 +32,4 @@ const BpoServices = () => {
   );
 };
 
-export default BpoServices;
+export default RpoServices;

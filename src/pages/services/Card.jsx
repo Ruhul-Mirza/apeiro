@@ -60,7 +60,6 @@ export const ServiceCard = ({
           content="Know More"
           color="foreground"
           className="px-3 py-2 rounded-md text-xs"
-          delay={500}
           isOpen={isOpen}
           onOpenChange={(open) => setIsOpen(open)}
         >

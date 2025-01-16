@@ -7,7 +7,7 @@ const Contact = () => {
       {/* Hero Section */}
       <div className="relative border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-center text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-center text-gray-900 mb-4">
             Contact Us
           </h1>
           <p className="text-center text-gray-500 max-w-2xl mx-auto text-lg font-light">
@@ -28,8 +28,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Location</h3>
-                  <p className="mt-3 text-gray-500">123 Innovation Drive</p>
-                  <p className="text-gray-500">San Francisco, CA 94107</p>
+                  <p className="mt-3 text-gray-500">85, Sector 1, Millenium Business Park,</p>
+                    <p className='text-gray-500'> MIDC Industrial Area, Kopar Khairane, Navi Mumbai</p>
+                  <p className="text-gray-500"> Maharashtra 400710</p>
                 </div>
               </div>
 
@@ -40,7 +41,7 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                   <p className="mt-3 text-gray-500">+1 (555) 123-4567</p>
-                  <p className="text-gray-500">Monday to Friday, 9am-6pm PST</p>
+                  <p className="text-gray-500">Monday to Friday</p>
                 </div>
               </div>
 
@@ -50,22 +51,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                  <p className="mt-3 text-gray-500">contact@example.com</p>
+                  <p className="mt-3 text-gray-500">aoun@apeiroresearch.com</p>
                   <p className="text-gray-500">We'll respond within 24 hours</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6">
-                <div>
-                  <ClockIcon className="h-6 w-6 text-gray-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900">Hours</h3>
-                  <p className="mt-3 text-gray-500">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p className="text-gray-500">Saturday: 10:00 AM - 4:00 PM</p>
-                  <p className="text-gray-500">Sunday: Closed</p>
-                </div>
-              </div>
             </div>
 
             {/* Company Stats */}

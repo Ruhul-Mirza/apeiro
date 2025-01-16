@@ -1,13 +1,14 @@
 import { React, useState } from "react"
 import { KPOSERVICES } from "../../lib/utils";
-import ServicesHeading from "./ServicesHeading";
+
+import { KpoServicesHeading } from "./ServicesHeading";
 import { ServiceCard } from "./Card";
 
 const KpoServices = () => {
   
   return (
     <div className="bg-gray-50 bg-opacity-75">
-      <ServicesHeading />
+      <KpoServicesHeading />
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden">
         <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
           {KPOSERVICES.map((service,index) => (

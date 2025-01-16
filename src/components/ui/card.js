@@ -1,10 +1,18 @@
 import React from "react";
 import {UserIcon } from "@heroicons/react/24/outline";
-import { cn } from "../../lib/utils";
-export const AboutCard = ({ icon: Icon, title }) => {
+
+export const AboutCard = ({ icon: Icon, title,color }) => {
+  const cardthemes ={
+    pink:"hover:border-pink-400",
+    blue:"hover:border-blue-400",
+    orange:"hover:border-orange-400",
+    red:"hover:border-red-400",
+    green:"hover:border-green-400",
+    purple:"hover:border-purple-400"
+  }
   return (
     <div
-      className="border border-zinc-200 tracking-wide rounded-xl p-5 cursor-pointer hover:shadow-md hover:border-gray-400 hover:shadow-gray-300 bg-white"
+    className={`border border-zinc-200 tracking-wide rounded-xl p-5 cursor-pointer bg-white ${cardthemes[color]}`}
     >
       <div className="flex items-center justify-center h-12 w-12 bg-gray-100 rounded-full">
         <Icon className="h-6 w-6 text-gray-500" />
