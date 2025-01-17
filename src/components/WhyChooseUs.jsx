@@ -65,7 +65,7 @@ export const ValueCard = ({ icon, title, description }) => {
           </svg>
         </div>
         <div
-          className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#D7EDEA] to-[#F4FBDF] opacity-0 transition duration-300 group-hover:opacity-100"
+          className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#EEEEEE] to-[#BDBDBD]  opacity-0 transition duration-300 group-hover:opacity-100"
           style={{ maskImage: 'radial-gradient(300px at 0px 0px, white, transparent)' }}
         ></div>
         <div
@@ -111,7 +111,9 @@ const WhyChooseUs = () => {
   return (
     <div className='mt-10 mb-20'>
     <WhyChooseHeader/>
-    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 gap-6">
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 gap-6"  data-aos="fade-right"
+        
+        data-aos-duration="1300">
       {cardData.map((card, index) => (
         <ValueCard
           key={index}

@@ -8,16 +8,16 @@ const Footer = () => {
       <div className="px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28">
           {/* Logo and Description */}
-          <div className="flex flex-col items-center sm:items-start">
+          <div className="flex flex-col">
             <div className="text-teal-600">
               <img src={largeScreen} alt="Apeiro Logo" className="w-40" />
             </div>
-            <p className="mt-4 text-center sm:text-left text-gray-500">
+            <p className="mt-4 text-left text-gray-500">
               The Ultimate Destination Of Research.
             </p>
             {/* Social Icons */}
-            <ul className="mt-6 flex space-x-2 justify-center sm:justify-start">
-              <li>
+            <ul className="mt-6 flex space-x-2">
+              <li className="cursor-pointer">
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -198,7 +198,7 @@ const Footer = () => {
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
                   <NavLink
-                    to="/kpo-service"
+                    to="/kpo-services"
                     className="text-gray-400 transition hover:text-black"
                   >
                     Kpo Service
@@ -206,7 +206,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/rpo-service"
+                    to="/rpo-services"
                     className="text-gray-400 transition hover:text-black"
                   >
                     Rpo Service
@@ -227,7 +227,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/about"
+                    to="/why-us"
                     className="text-gray-400 transition hover:text-black"
                   >
                     Why us
@@ -235,7 +235,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/about"
+                    to="/company-overview"
                     className="text-gray-400 transition hover:text-black"
                   >
                     Company Overview

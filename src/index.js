@@ -15,7 +15,7 @@ import {
 import KpoServices from "./pages/services/KpoServices";
 import RpoServices from "./pages/services/RpoServices"
 import Contact from "./pages/Contact/Contact";
-import ReadMore from "./pages/readmore/ReadMore";
+import ServiceDetail from "./pages/services/ServiceDetail";
 
 
 const router = createBrowserRouter(
@@ -23,12 +23,13 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
       <Route path="about" element={<AboutPage />} />
-      <Route path="rpo-service" element={<RpoServices/>}/>
-      <Route path="kpo-service" element={<KpoServices/>}/>
+      <Route path="rpo-services" element={<RpoServices/>}/>
+      <Route path="kpo-services" element={<KpoServices/>}/>
+      <Route path="kpo-services/:serviceId" element={<ServiceDetail/>}/> 
+       <Route path="rpo-services/:serviceId" element={<ServiceDetail/>}/>
       <Route path="why-us" element={<WhyUs />}></Route>
       <Route path="company-overview" element={<CompanyOverView />}></Route>
       <Route path="contact" element={<Contact />}></Route>
-      <Route path="read-more" element={<ReadMore />}></Route>
     </Route>
   )
 );

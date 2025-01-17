@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-import { useCountUp } from "../../hooks/useCountUp";
+import { useCountUp } from "../../hooks/useCountUp"; 
 import {
-  ChartBarSquareIcon,
-  CurrencyDollarIcon,
   DocumentCheckIcon,
   MagnifyingGlassIcon,
-  ShoppingBagIcon,
   UserCircleIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 
 const formatValue = (value, prefix = "") => {
-  return `${prefix}${value.toLocaleString("en-US", {
+  return `${value.toLocaleString("en-US", {
     maximumFractionDigits: 2,
-  })}`;
+  })} ${prefix}`;
 };
 
 const StatCard = ({ icon: Icon, title, endValue, prefix = "", subtitle }) => {
@@ -43,14 +40,13 @@ const StatCard = ({ icon: Icon, title, endValue, prefix = "", subtitle }) => {
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
             >
-              {formatValue(count, prefix)}
+              {formatValue(count,prefix)}
             </p>
             <h3 className="text-xs font-medium text-slate-500 uppercase tracking-wider">
               {title}
             </h3>
           </div>
         </div>
-     
       </div>
     </div>
   );
@@ -77,19 +73,20 @@ function Stats() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"  data-aos="zoom-in-right"
+            
+            data-aos-duration="1000">
           <StatCard
             icon={UserCircleIcon}
             title="Delighted Partners"
             endValue={300}
             prefix="+"
-            
           />
           <StatCard
             icon={UserGroupIcon}
             title="Team Members"
-            prefix="+"
             endValue={50}
+            prefix="+"
           />
           <StatCard
             icon={MagnifyingGlassIcon}
@@ -100,9 +97,8 @@ function Stats() {
           <StatCard
             icon={DocumentCheckIcon}
             title="Deliver Result"
-            prefix="M"
             endValue={10}
-            
+            prefix="M"
           />
         </div>
       </div>

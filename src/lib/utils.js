@@ -20,7 +20,7 @@ import {
   UserPlusIcon,
   ClipboardDocumentListIcon,
   UserIcon,
-  DocumentPlusIcon
+  DocumentPlusIcon,
 } from "@heroicons/react/24/outline";
 
 import { clsx } from "clsx";
@@ -35,144 +35,118 @@ export const KPOSERVICES = [
   {
     icon: EnvelopeIcon,
     title: "Email List Building",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Targeted lists. Quality leads. Maximum impact.",
-      key: "email-list",
-      color:"red",
-      
+    detailPath: "/kpo-services/email-list-building",
+    description: "Targeted lists. Quality leads. Maximum impact.",
+    key: "email-list",
+    color: "red",
   },
   {
     icon: PlusCircleIcon,
     title: "Data Append",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Enhance accuracy. Fill gaps. Boost insights.",
-      key: "data-append",
-      color:"orange",
-      
+    detailPath: "/kpo-services/data-append",
+    description: "Enhance accuracy. Fill gaps. Boost insights.",
+    key: "data-append",
+    color: "orange",
   },
   {
     icon: ArrowPathIcon,
     title: "Data Refresh",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Update. Verify. Stay current.",
-      key: "data-refresh",
-      color:"green",
-      
+    detailPath: "/kpo-services/data-refresh",
+    description: "Update. Verify. Stay current.",
+    key: "data-refresh",
+    color: "green",
   },
   {
     icon: CircleStackIcon,
     title: "Customize B2B Database",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Tailored data. Better targeting. Greater results",
-      key: "customize-b2b",
-      color:"blue",
-      
+    detailPath: "/kpo-services/customize-b2b-database",
+    description: "Tailored data. Better targeting. Greater results",
+    key: "customize-b2b",
+    color: "blue",
   },
   {
     icon: BuildingOfficeIcon,
     title: "DataBase Building",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Accurate data. Smart solutions. Stronger connections.",
-      key:"database-building",
-      color:"pink",
-      
+    detailPath: "/kpo-services/database-building",
+    description: "Accurate data. Smart solutions. Stronger connections.",
+    key: "database-building",
+    color: "pink",
   },
   {
     icon: DocumentMagnifyingGlassIcon,
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    detailPath: "/kpo-services/content-research",
     title: "Content Research",
-    description:
-      "Insights-driven. Well-crafted. Engaging content.",
-      key:"content-research",
-      color:"purple",
-      
-
+    description: "Insights-driven. Well-crafted. Engaging content.",
+    key: "content-research",
+    color: "purple",
   },
   {
     icon: EnvelopeIcon,
     title: "LinkedIn Data Search",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Targeted profiles. Relevant connections. Precise insights.",
-      key:"linkedin-data",
-      color:"yellow",
-      
-      
+    detailPath: "/kpo-services/linkedin-data-search",
+    description: "Targeted profiles. Relevant connections. Precise insights.",
+    key: "linkedin-data",
+    color: "yellow",
   },
   {
     icon: SpeakerWaveIcon,
     title: "Lead generation",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    detailPath: "/kpo-services/lead-generation",
     description:
       "Qualified leads. Stronger opportunities. Greater conversions.",
-      key:"lead-generation",
-      color:"emerald",
-      
+    key: "lead-generation",
+    color: "emerald",
   },
   {
     icon: ServerStackIcon,
     title: "Online-Offline Data entry Services",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    detailPath: "/kpo-services/online-offline-data",
     description:
       "Fast, accurate, and reliable data input for seamless operations.",
-      key:"online-offline",
-      color:"blue",
-      
+    key: "online-offline",
+    color: "blue",
   },
   {
     icon: CheckIcon,
     title: "Data-Validation",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Ensure accuracy. Eliminate errors. Strengthen decisions.",
-      key:"data-validation",
-      color:"orange",
-      
+    detailPath: "/kpo-services/data-validation",
+    description: "Ensure accuracy. Eliminate errors. Strengthen decisions.",
+    key: "data-validation",
+    color: "orange",
   },
   {
     icon: ChartPieIcon,
     title: "Data-Mining",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    detailPath: "/kpo-services/data-mining",
     description:
       "Extract valuable insights. Uncover patterns. Drive informed decisions.",
-      key:"data-mining",
-      color:"maroon",
-      
+    key: "data-mining",
+    color: "maroon",
   },
   {
     icon: GlobeAltIcon,
     title: "Web-Research",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Optimize content, design, and user experience.",
-      key:"web-research",
-      color:"green",
-      
+    detailPath: "/kpo-services/web-research",
+    description: "Optimize content, design, and user experience.",
+    key: "web-research",
+    color: "green",
   },
   {
     icon: QueueListIcon,
     title: "List-Research",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
+    detailPath: "/kpo-services/list-research",
     description:
       "Gathers data on trends, competitors, SEO, content, UX, and design to enhance the site",
-      key:"list-research",
-      color:"pink",
-      
+    key: "list-research",
+    color: "pink",
   },
   {
     icon: EnvelopeIcon,
     title: "B2B-Email",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Connecting businesses through impactful emails",
-      key:"b2b-email",
-      color:"indigo",
-      
+    detailPath: "/kpo-services/b2b-email",
+    description: "Connecting businesses through impactful emails",
+    key: "b2b-email",
+    color: "indigo",
   },
 ];
 
@@ -180,121 +154,404 @@ export const RPOSERVICES = [
   {
     icon: NumberedListIcon,
     title: "Number Gathering",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Expertly gathering numbers for informed decisions.",
-      key: "number-gathering",
-      color:"red",
+    detailPath: "/rpo-services/number-gathering",
+    description: "Expertly gathering numbers for informed decisions.",
+    key: "number-gathering",
+    color: "red",
   },
   {
     icon: LightBulbIcon,
     title: "Talent Mapping",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Strategically mapping talent for the right fit.",
-      key: "talent-mapping",
-      color:"green",
+    detailPath: "/rpo-services/talent-mapping",
+    description: "Strategically mapping talent for the right fit.",
+    key: "talent-mapping",
+    color: "green",
   },
   {
     icon: MagnifyingGlassIcon,
     title: "Talent Sourcing",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Connecting the right talent with the right opportunity.",
-      key: "talent-sourcing",
-      color:"indigo",
+    detailPath: "/rpo-services/talent-sourcing",
+    description: "Connecting the right talent with the right opportunity.",
+    key: "talent-sourcing",
+    color: "indigo",
   },
   {
-    icon:ChartBarIcon,
+    icon: ChartBarIcon,
     title: "Talent Insight & Intelligence",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Unlocking talent insights for smarter decisions.",
-      key: "talent-insight",
-      color:"orange",
+    detailPath: "/rpo-services/talent-insight",
+    description: "Unlocking talent insights for smarter decisions.",
+    key: "talent-insight",
+    color: "orange",
   },
   {
-    icon:UsersIcon,
+    icon: UsersIcon,
     title: "Diversity Hiring",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Fostering diverse teams for stronger innovation.",
-      key: "diversity-hiring",
-      color:"blue",
+    detailPath: "/rpo-services/diversity-hiring",
+    description: "Fostering diverse teams for stronger innovation.",
+    key: "diversity-hiring",
+    color: "blue",
   },
   {
-    icon:BriefcaseIcon,
+    icon: BriefcaseIcon,
     title: "Executive Search Support",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Empowering executive search with tailored support.",
-      key: "executive-search-support",
-      color:"pink",
+    detailPath: "/rpo-services/executive-search-support",
+    description: "Empowering executive search with tailored support.",
+    key: "executive-search-support",
+    color: "pink",
   },
   {
-    icon:UserPlusIcon,
+    icon: UserPlusIcon,
     title: "Talent Pipeline",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Building a pipeline of top-tier talent for future success.",
-      key: "talent-pipeline",
-      color:"maroon",
+    detailPath: "/rpo-services/talent-pipeline",
+    description: "Building a pipeline of top-tier talent for future success.",
+    key: "talent-pipeline",
+    color: "maroon",
   },
   {
-    icon:ClipboardDocumentListIcon,
+    icon: ClipboardDocumentListIcon,
     title: "Recruitment Services",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Connecting the right talent with the right opportunities.",
-      key: "recruitment-services",
-      color:"emerald",
+    detailPath: "/rpo-services/recruitment-services",
+    description: "Connecting the right talent with the right opportunities.",
+    key: "recruitment-services",
+    color: "emerald",
   },
   {
-    icon:DocumentPlusIcon,
+    icon: DocumentPlusIcon,
     title: "Talent Pooling",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Creating a pool of top talent for future growth.",
-      key: "talent-pooling",
-      color:"purple",
+    detailPath: "/rpo-services/talent-pooling",
+    description: "Creating a pool of top talent for future growth.",
+    key: "talent-pooling",
+    color: "purple",
   },
   {
-    icon:UserIcon,
+    icon: UserIcon,
     title: "Admin Support",
-    guideLink:"https://apeiro-research.hashnode.space/default-guide/data",
-    description:
-      "Efficient admin support to streamline your operations.",
-      key: "admin-support",
-      color:"red",
+    detailPath: "/rpo-services/admin-support",
+    description: "Efficient admin support to streamline your operations.",
+    key: "admin-support",
+    color: "red",
   },
-]
-export const CompanyDropdownItems =[
-{
-  title:"About",
-  href:"/about"
-},
-{
-  title:"Why Us",
-  href:"/why-us"
-},
-{
-  title:"Company Overview",
-  href:"/company-overview"
-},
-]
-
-export const ServicesDropdownItems =[
+];
+export const CompanyDropdownItems = [
   {
-    title:"KPO Service",
-    href:"/kpo-service"
+    title: "About",
+    href: "/about",
   },
   {
-    title:"RPO Service",
-    href:"/rpo-service"
+    title: "Why Us",
+    href: "/why-us",
+  },
+  {
+    title: "Company Overview",
+    href: "/company-overview",
+  },
+];
+
+export const ServicesDropdownItems = [
+  {
+    title: "KPO Service",
+    href: "/kpo-services",
+  },
+  {
+    title: "RPO Service",
+    href: "/rpo-services",
+  },
+];
+
+export const serviceDetails = {
+  // KPO-Services
+  "email-list-building": {
+    title: "Email List Building",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "data-append": {
+    title: "Data Append",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "data-refresh": {
+    title: "Data Refresh",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "customize-b2b-database": {
+    title: "Customize B2B Database",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "database-building": {
+    title: "DataBase Building",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "content-research": {
+    title: "Content Research",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "linkedin-data-search": {
+    title: "Linked Data Search",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "lead-generation": {
+    title: "Lead Generation",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
   },
 
-  ]
-  
+  "online-offline-data": {
+    title: "Online-Offline Data entry Services",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "data-validation": {
+    title: "Data Validation",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "data-mining": {
+    title: "Data Mining",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "web-research": {
+    title: "Web-Research",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "list-research": {
+    title: "List-Research",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "b2b-email": {
+    title: "B2B-Email",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+
+  // RPO Service
+  "number-gathering": {
+    title: "Number Gathering",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "talent-mapping": {
+    title: "Talent Mapping",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "talent-sourcing": {
+    title: "Talent Sourcing",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "talent-insight": {
+    title: "Talent Insight",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "diversity-hiring": {
+    title: "Diversity Hiring",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "executive-search-support": {
+    title: "Execution Search Support",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "talent-pipeline": {
+    title: "Talent Pipeline",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "recruitment-services": {
+    title: "Recruitment Services",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "talent-pooling": {
+    title: "Talent Pooling",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+  "admin-support": {
+    title: "Admin Support",
+    details:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    points: [
+      { content: " Detailed explanation of how we build email lists." },
+      { content: " Quality assurance and data cleaning processes." },
+      {
+        content: " Customization options to match your specific needs.",
+      },
+    ],
+  },
+};
 // export const WHYCHOOSEDATA = [
 //     {
 //       icon: <DollarSignIcon className="h-8 w-8 text-gray-500" />,

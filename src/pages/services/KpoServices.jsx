@@ -10,14 +10,16 @@ const KpoServices = () => {
     <div className="bg-gray-50 bg-opacity-75">
       <KpoServicesHeading />
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden">
-        <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+        <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6"   data-aos="fade-right"
+      
+      data-aos-duration="1300">
           {KPOSERVICES.map((service,index) => (
             <ServiceCard
               key={service.key}
               icon={service.icon}
               title={service.title}
               description={service.description}
-              guideLink={service.guideLink}
+              detailPath={service.detailPath}
               color={service.color}
               className={`transform transition-transform duration-300 hover:-translate-y-1 ${
                 index % 3 === 0

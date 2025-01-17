@@ -13,7 +13,9 @@ import {
 const CompanyOverView = () => {
   return (
     <div className="overflow-hidden min-h-screen">
-      <div className="relative mb-auto flex w-screen flex-col overflow-hidden pt-40 pb-20">
+      <div className="relative mb-auto flex w-screen flex-col overflow-hidden pt-40 pb-20"  data-aos="fade-down"
+      
+      data-aos-duration="1300">
         {/* dotimage */}
         <div
           className="absolute top-0 right-0 bottom-0 left-0 bg-cover bg-bottom bg-no-repeat"
@@ -69,7 +71,9 @@ function CompanyAccordion() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="px-5 py-14 sm:px-16 bg-gray-50">
+    <div className="px-5 py-14 sm:px-16 bg-gray-50"   data-aos="fade-up"
+    
+    data-aos-duration="1300">
       <Accordion
         selectedKeys={selectedKeys}
         onSelectionChange={setSelectedKeys}
@@ -159,7 +163,9 @@ const CoreValueCard = () => {
           <div className="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12"   data-aos="zoom-in-up"
+      
+      data-aos-duration="1300">
           {/* Innovation */}
           <div className="group bg-white/5 backdrop-blur-lg rounded-2xl p-8 transition-all duration-300 hover:bg-white/10 hover:transform hover:-translate-y-1">
             <div className="flex items-center mb-4">
@@ -266,12 +272,12 @@ const CoreValueCard = () => {
         <div className="text-center mt-16">
           <p className="text-slate-300 text-lg">
             You have better things to do than worry about your business.{" "}
-            <a
-              href="#contact"
+            <NavLink
+              to="/contact"
               className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
             >
               Let's Discuss your Project
-            </a>
+            </NavLink>
           </p>
         </div>
       </div>

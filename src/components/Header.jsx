@@ -22,7 +22,7 @@ const Header = () => {
         {/* Logo and Menu for Small Screens */}
         <div className="icon flex items-center">
           <span className="sm:hidden items-center flex">
-            <Dropdown>
+            <Dropdown className="mt-2">
               <DropdownTrigger>
                 <Bars3Icon className="text-lg h-6 w-6 mx-1 text-zinc-600" />
               </DropdownTrigger>
@@ -50,12 +50,12 @@ const Header = () => {
                 <DropdownSection title="Services">
                   <DropdownItem
                     key="kpo-services"
-                    href="/kpo-service"
+                    href="/kpo-services"
                     className="border-none"
                   >
                     Kpo Service
                   </DropdownItem>
-                  <DropdownItem key="rpo-services" href="/rpo-service" className="border-none">
+                  <DropdownItem key="rpo-services" href="/rpo-services" className="border-none">
                     Rpo Service
                   </DropdownItem>
                 </DropdownSection>

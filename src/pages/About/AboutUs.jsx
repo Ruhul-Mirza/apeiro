@@ -1,9 +1,10 @@
-import WorldMap from "../../components/ui/world-map";
+// import WorldMap from "../../components/ui/world-map";
 import { motion } from "motion/react";
 import smallScreen from "../../image/smallscreen.png";
 import { ChevronRightIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
-
+import { Suspense, lazy } from "react";
+const WorldMap = lazy(() => import("../../components/ui/world-map"));
 export default function AboutPage() {
   return (
     <>
@@ -14,66 +15,60 @@ export default function AboutPage() {
 }
 function AboutUs() {
   return (
-    <div className=" pt-40 pb-20 dark:bg-black w-full">
+    <div
+      className=" pt-40 pb-20 dark:bg-black w-full"
+      data-aos="fade-up"
+      data-aos-duration="1300"
+    >
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-semibold tracking-wider text-lg md:text-2xl m-2 mb-8 uppercase dark:text-gray-300 inline-block text-neutral-400 border-b-3 pb-1 border-neutral-300">
+        <p className="font-semibold tracking-wider text-lg md:text-2xl m-2 mb-6 md:mb-8 uppercase dark:text-gray-300 inline-block text-neutral-400 border-b-3 pb-1 border-neutral-300">
           About Us
         </p>
         <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
-          Apeiro{" "}
-          <span className="text-neutral-400">
-            {"Research".split("").map((word, idx) => (
-              <motion.span
-                key={idx}
-                className="inline-block"
-                initial={{ x: -10, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: idx * 0.04 }}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </span>
+          Apeiro <span className="text-neutral-400">Research</span>
         </p>
-        <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
+        <p className="text-sm md:text-lg px-2 text-neutral-500 max-w-2xl mx-auto py-4">
           We provide global KPO and RPO services with a skilled team, driving
           success and growth worldwide
         </p>
       </div>
-      <WorldMap
-        dots={[
-          {
-            start: {
-              lat: 64.2008,
-              lng: -149.4937,
-            }, // Alaska (Fairbanks)
-            end: {
-              lat: 34.0522,
-              lng: -118.2437,
-            }, // Los Angeles
-          },
-          {
-            start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
-            end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
-          },
-          {
-            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
-          },
-          {
-            start: { lat: 51.5074, lng: -0.1278 }, // London
-            end: { lat: 28.6139, lng: 77.209 }, // New Delhi
-          },
-          {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
-          },
-          {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
-          },
-        ]}
-      />
+      <Suspense fallback={<div
+      className="w-[75%] aspect-[2/1] mx-auto dark:bg-black bg-gray-300 animate-pulse rounded-lg" ></div>}>
+        <WorldMap
+          dots={[
+            {
+              start: {
+                lat: 64.2008,
+                lng: -149.4937,
+              }, // Alaska (Fairbanks)
+              end: {
+                lat: 34.0522,
+                lng: -118.2437,
+              }, // Los Angeles
+            },
+            {
+              start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
+              end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+            },
+            {
+              start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
+              end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
+            },
+            {
+              start: { lat: 51.5074, lng: -0.1278 }, // London
+              end: { lat: 28.6139, lng: 77.209 }, // New Delhi
+            },
+            {
+              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+              end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
+            },
+            {
+              start: { lat: 28.6139, lng: 77.209 }, // New Delhi
+              end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
+            },
+          ]}
+        />
+      </Suspense>
     </div>
   );
 }
@@ -105,7 +100,6 @@ const OurTeam = () => {
       role: "Software Engineer",
       color: "purple",
     },
-    
   ];
   return (
     <>
@@ -119,12 +113,20 @@ const OurTeam = () => {
             <span className="text-2xl md:3xl font-semibold">Our Team</span>
           </div>
           <div className="flex flex-col lg:flex-row gap-8 mt-10 items-start lg:items-center">
-            <div className="flex flex-col w-full lg:w-1/2 mt-8 lg:mt-0">
+            <div
+              className="flex flex-col w-full lg:w-1/2 mt-8 lg:mt-0"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               <h2 className="text-xl md:text-3xl font-bold">
                 Meet Our Team Of Experts
               </h2>
               <p className="text-gray-600 text-sm md:text-base mt-3">
-              Our team at Apeiro Research is a diverse group of skilled professionals from around the world, united by a shared commitment to excellence. Each member brings unique expertise in KPO and RPO services, working together to deliver innovative solutions and drive success for our clients.
+                Our team at Apeiro Research is a diverse group of skilled
+                professionals from around the world, united by a shared
+                commitment to excellence. Each member brings unique expertise in
+                KPO and RPO services, working together to deliver innovative
+                solutions and drive success for our clients.
               </p>
               <div>
                 <button className="mt-5 tracking-wide flex items-center gap-2 px-5 py-3 rounded-full text-white bg-black/90 hover:bg-black/100 font-bold">
@@ -135,7 +137,11 @@ const OurTeam = () => {
             </div>
 
             {/* Card Section */}
-            <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 w-full lg:w-1/2">
+            <div
+              className="grid grid-cols-1 xs:grid-cols-2 gap-4 w-full lg:w-1/2"
+              data-aos="zoom-in-up"
+              data-aos-duration="800"
+            >
               {aboutCards.map((aboutCard, index) => (
                 <AboutCard
                   key={index}
