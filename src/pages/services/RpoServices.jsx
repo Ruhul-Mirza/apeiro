@@ -10,7 +10,7 @@ const RpoServices = () => {
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden"   data-aos="fade-down"
       
       data-aos-duration="1300">
-        <div className="mt-8 mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+        <div className="mb-24 grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
           {RPOSERVICES.map((service,index) => (
             <ServiceCard
               key={service.key}
