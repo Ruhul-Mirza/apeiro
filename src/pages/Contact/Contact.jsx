@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MapPin, Phone, SquareArrowOutUpRight } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -79,9 +79,7 @@ const Contact = () => {
 
 export default Contact;
 
-{
-  /* Contact Form Section */
-}
+
 {
   /* <div className="lg:sticky lg:top-8">
             <div className="bg-gray-50 border border-gray-100">

@@ -1,6 +1,7 @@
 {
   "name": "apeiro",
   "version": "0.1.0",
+  "homepage":"https://apeiroresearch.com",
   "private": true,
   "dependencies": {
     "@iconify/react": "^5.2.0",

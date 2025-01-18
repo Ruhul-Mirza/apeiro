@@ -82,12 +82,11 @@ function CompanyAccordion() {
         <AccordionItem
           key="1"
           aria-label="Accordion 1"
-          // subtitle={
-          //   <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
-          //     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          //     Reiciendis, ullam.
-          //   </span>
-          // }
+          subtitle={
+            <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
+             Empowering businesses with knowledge, talent, and global excellence.
+            </span>
+          }
           indicator={
             <span
               aria-hidden="true"
@@ -104,12 +103,11 @@ function CompanyAccordion() {
         <AccordionItem
           key="2"
           aria-label="Accordion 2"
-          // subtitle={
-          //   <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
-          //     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          //     Reiciendis, ullam.
-          //   </span>
-          // }
+          subtitle={
+            <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
+              Transforming businesses with cutting-edge insights and world-class talent solutions.
+            </span>
+          }
           indicator={
             <span
               aria-hidden="true"

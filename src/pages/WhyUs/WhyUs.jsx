@@ -127,12 +127,11 @@ function WhyUs() {
 
               <div className="mt-8 pt-8 border-t border-gray-100">
                 <blockquote className="text-gray-600 font-semibold italic">
-                  "Our partnership has been instrumental in transforming our
-                  operations and achieving unprecedented growth."
+                "Do what you do best and outsource the rest."
                 </blockquote>
-                {/* <p className="text-sm text-gray-500 mt-4">
-                  — James Mitchell, CEO of Global Solutions Inc.
-                </p> */}
+                <p className="text-sm text-gray-500 mt-4">
+                – Peter Drucker, Renowned Management Consultant
+                </p>
               </div>
             </div>
           </div>
