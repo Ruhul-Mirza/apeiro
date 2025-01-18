@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form Section */}
-          <div className="lg:sticky lg:top-8">
+          {/* <div className="lg:sticky lg:top-8">
             <div className="bg-gray-50 border border-gray-100">
               <div className="py-12 px-6">
                 <div className="flex items-center justify-between mb-8">
@@ -93,7 +93,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

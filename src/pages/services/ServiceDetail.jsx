@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { serviceDetails } from "../../lib/utils";
+import image from  "../../image/Image.jpg"
+import { serviceDetails } from "../../lib/utils2";
 import { CheckCircleIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
 
 function ServiceDetail() {
@@ -12,8 +13,7 @@ function ServiceDetail() {
   }
 
   return (
-    <div className="service-detail mt-16"   data-aos="zoom-in-up"
-    
+    <div className="service-detail mt-16" data-aos="zoom-in-up"
     data-aos-duration="1300">
     <div className="container mx-auto px-4 py-16 max-w-6xl">
       <div className="service-card rounded-2xl shadow-md overflow-hidden">
@@ -21,11 +21,11 @@ function ServiceDetail() {
           {/* Image Section */}
           <div className="image-section relative h-64 md:h-auto">
             <img
-              src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?auto=format&fit=crop&q=80"
+              src={image}
               alt="Professional service illustration"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-blue-900/10 backdrop-blur-[1px]" />
+            <div className="absolute inset-0 bg-blue-900/10 " />
           </div>
 
           {/* Content Section */}

@@ -29,7 +29,7 @@ const Header = () => {
               <DropdownMenu variant="light" aria-label="Static Actions">
                 <DropdownSection showDivider>
                   <DropdownItem key="home" className="border-none">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="">Home</NavLink>
                   </DropdownItem>
                 </DropdownSection>
                 <DropdownSection showDivider title="Menu">
@@ -81,7 +81,7 @@ const Header = () => {
         <div className="space-x-4 hidden sm:flex items-center">
           <span>
             <NavLink
-              to="/"
+              to=""
               className="cursor-pointer hover:bg-gray-100 px-4 py-2 rounded-3xl text-sm"
             >
               Home

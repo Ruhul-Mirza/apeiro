@@ -6,9 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export function KpoServicesHeading() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-hidden pt-12"   data-aos="zoom-in"
-    
-    data-aos-duration="1300">
+    <div className="relative flex min-h-screen w-full flex-col overflow-hidden pt-12" data-aos="zoom-in" data-aos-duration="1300">
       <main className="container mx-auto flex flex-1 flex-col items-center justify-center px-4 sm:px-8">
         <section className="z-20 flex flex-col items-center justify-center gap-4 sm:gap-6">
           {/* Button */}
