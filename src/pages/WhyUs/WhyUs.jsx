@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  PuzzlePieceIcon,
-  ChartBarIcon,
-  ArrowPathIcon,
-  UserGroupIcon,
-  LightBulbIcon,
-  ArrowUpRightIcon,
-} from "@heroicons/react/24/outline";
+
+import { ArrowUpRight, ChartColumnBig, Lightbulb, Puzzle, RefreshCw, UsersRound } from "lucide-react";
 
 function WhyUs() {
   return (
@@ -26,42 +20,42 @@ function WhyUs() {
               {/* Custom Pointers with Icons */}
               {[
                 {
-                  icon: PuzzlePieceIcon,
+                  icon: Puzzle,
                   title: "Customized Solutions",
                   description:
                     "We design personalized RPO and KPO services that align with your specific business objectives, ensuring maximum impact and value.",
                   color: "stroke-green-600",
                 },
                 {
-                  icon: ChartBarIcon,
+                  icon: ChartColumnBig,
                   title: "Data-Driven Decisions",
                   description:
                     "By leveraging data and insights, we optimize recruitment and knowledge processes, ensuring smarter decisions and better results for our clients.",
                   color: "stroke-purple-600",
                 },
                 {
-                  icon: ArrowPathIcon,
+                  icon: RefreshCw,
                   title: "Agility & Flexibility",
                   description:
                     "We adapt to changing market demands and evolving business needs, offering scalable solutions that grow with your business.",
                   color: "stroke-red-600",
                 },
                 {
-                  icon: LightBulbIcon,
+                  icon: Lightbulb,
                   title: "Innovation & Technology",
                   description:
                     "By integrating the latest technologies and automation, we improve efficiency, accuracy, and scalability, driving success in every project we undertake.",
                   color: "stroke-blue-900",
                 },
                 {
-                  icon: UserGroupIcon,
+                  icon: UsersRound,
                   title: "Collaborative Partnerships",
                   description:
                     "We work closely with clients to understand their goals and build strong, long-term partnerships that promote mutual success and sustained growth.",
                   color: "stroke-yellow-500",
                 },
                 {
-                  icon: ArrowUpRightIcon,
+                  icon: ArrowUpRight,
                   title: "Continuous Improvement",
                   description:
                     "We constantly evaluate and refine our strategies and processes, ensuring we stay at the forefront of industry trends and always deliver exceptional outcomes.",
@@ -136,9 +130,9 @@ function WhyUs() {
                   "Our partnership has been instrumental in transforming our
                   operations and achieving unprecedented growth."
                 </blockquote>
-                <p className="text-sm text-gray-500 mt-4">
+                {/* <p className="text-sm text-gray-500 mt-4">
                   — James Mitchell, CEO of Global Solutions Inc.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

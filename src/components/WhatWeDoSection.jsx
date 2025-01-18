@@ -3,7 +3,8 @@ import { ServiceCard } from "../pages/services/Card";
 import { Tabs, Tab } from "@nextui-org/tabs";
 import { KPOSERVICES, RPOSERVICES } from "../lib/utils";
 import { NavLink } from "react-router-dom";
-import { PlusIcon } from "@heroicons/react/24/outline";
+import { Plus } from "lucide-react";
+
 
 const KpoCards = [
   "email-list",
@@ -58,7 +59,7 @@ export function WhatWeDoSection() {
             <div className="flex justify-center">
               <button className="flex justify-between items-center gap-2 py-2 px-4 border border-zinc-100 rounded-3xl text-sm font-normal cursor-pointer hover:bg-gray-100 bg-white">
                 <NavLink to="/kpo-services">More Services</NavLink>
-                <PlusIcon className="h-3.5 w-3.5" />
+                <Plus className="h-3.5 w-3.5" />
               </button>
             </div>
           </Tab>
@@ -90,7 +91,7 @@ export function WhatWeDoSection() {
             <div className="flex justify-center">
               <button className="flex justify-between items-center gap-2 py-2 px-4 border border-zinc-100 rounded-3xl text-sm font-normal cursor-pointer hover:bg-gray-100 bg-white">
                 <NavLink to="/rpo-services">More Services</NavLink>
-                <PlusIcon className="h-3.5 w-3.5" />
+                <Plus className="h-3.5 w-3.5" />
               </button>
             </div>
           </Tab>

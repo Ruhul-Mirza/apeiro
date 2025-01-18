@@ -52,7 +52,7 @@ const Dropdowns = ({ title, items }) => {
 
       {isOpen && (
         <ul
-          className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-300 rounded shadow-lg z-10"
+          className="absolute top-full left-0 w-48 bg-white border border-gray-300 shadow-lg z-10 mt-3 rounded-lg"
         >
           {items.map((item) => (
             <li key={item.title} className="py-1" role="none" tabIndex={-1}>

@@ -1,30 +1,7 @@
-import {
-  EnvelopeIcon,
-  PlusCircleIcon,
-  CircleStackIcon,
-  BuildingOfficeIcon,
-  ArrowPathIcon,
-  DocumentMagnifyingGlassIcon,
-  SpeakerWaveIcon,
-  ServerStackIcon,
-  CheckIcon,
-  ChartPieIcon,
-  GlobeAltIcon,
-  QueueListIcon,
-  NumberedListIcon,
-  LightBulbIcon,
-  MagnifyingGlassIcon,
-  ChartBarIcon,
-  UsersIcon,
-  BriefcaseIcon,
-  UserPlusIcon,
-  ClipboardDocumentListIcon,
-  UserIcon,
-  DocumentPlusIcon,
-} from "@heroicons/react/24/outline";
+
 
 import { clsx } from "clsx";
-import { color } from "framer-motion";
+import {  BriefcaseBusiness, Building, ChartColumnBig, Check, Database, FilePlus, FileSearch2, FileText, Globe, Lightbulb, Linkedin, ListOrdered, Logs, Mail, MailCheck, PieChart, PlusCircle, RefreshCcw, Search, Server, User, UserRoundPlus, UsersRound, Volume2 } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs) {
@@ -33,7 +10,7 @@ export function cn(...inputs) {
 
 export const KPOSERVICES = [
   {
-    icon: EnvelopeIcon,
+    icon: Mail,
     title: "Email List Building",
     detailPath: "/kpo-services/email-list-building",
     description: "Targeted lists. Quality leads. Maximum impact.",
@@ -41,7 +18,7 @@ export const KPOSERVICES = [
     color: "red",
   },
   {
-    icon: PlusCircleIcon,
+    icon: PlusCircle,
     title: "Data Append",
     detailPath: "/kpo-services/data-append",
     description: "Enhance accuracy. Fill gaps. Boost insights.",
@@ -49,7 +26,7 @@ export const KPOSERVICES = [
     color: "orange",
   },
   {
-    icon: ArrowPathIcon,
+    icon: RefreshCcw,
     title: "Data Refresh",
     detailPath: "/kpo-services/data-refresh",
     description: "Update. Verify. Stay current.",
@@ -57,7 +34,7 @@ export const KPOSERVICES = [
     color: "green",
   },
   {
-    icon: CircleStackIcon,
+    icon: Database,
     title: "Customize B2B Database",
     detailPath: "/kpo-services/customize-b2b-database",
     description: "Tailored data. Better targeting. Greater results",
@@ -65,7 +42,7 @@ export const KPOSERVICES = [
     color: "blue",
   },
   {
-    icon: BuildingOfficeIcon,
+    icon: Building,
     title: "DataBase Building",
     detailPath: "/kpo-services/database-building",
     description: "Accurate data. Smart solutions. Stronger connections.",
@@ -73,7 +50,7 @@ export const KPOSERVICES = [
     color: "pink",
   },
   {
-    icon: DocumentMagnifyingGlassIcon,
+    icon: FileSearch2,
     detailPath: "/kpo-services/content-research",
     title: "Content Research",
     description: "Insights-driven. Well-crafted. Engaging content.",
@@ -81,15 +58,15 @@ export const KPOSERVICES = [
     color: "purple",
   },
   {
-    icon: EnvelopeIcon,
+    icon: Linkedin,
     title: "LinkedIn Data Search",
     detailPath: "/kpo-services/linkedin-data-search",
     description: "Targeted profiles. Relevant connections. Precise insights.",
     key: "linkedin-data",
-    color: "yellow",
+    color: "blue",
   },
   {
-    icon: SpeakerWaveIcon,
+    icon: Volume2,
     title: "Lead generation",
     detailPath: "/kpo-services/lead-generation",
     description:
@@ -98,7 +75,7 @@ export const KPOSERVICES = [
     color: "emerald",
   },
   {
-    icon: ServerStackIcon,
+    icon: Server,
     title: "Online-Offline Data entry Services",
     detailPath: "/kpo-services/online-offline-data",
     description:
@@ -107,7 +84,7 @@ export const KPOSERVICES = [
     color: "blue",
   },
   {
-    icon: CheckIcon,
+    icon: Check,
     title: "Data-Validation",
     detailPath: "/kpo-services/data-validation",
     description: "Ensure accuracy. Eliminate errors. Strengthen decisions.",
@@ -115,7 +92,7 @@ export const KPOSERVICES = [
     color: "orange",
   },
   {
-    icon: ChartPieIcon,
+    icon: PieChart,
     title: "Data-Mining",
     detailPath: "/kpo-services/data-mining",
     description:
@@ -124,7 +101,7 @@ export const KPOSERVICES = [
     color: "maroon",
   },
   {
-    icon: GlobeAltIcon,
+    icon: Globe,
     title: "Web-Research",
     detailPath: "/kpo-services/web-research",
     description: "Optimize content, design, and user experience.",
@@ -132,7 +109,7 @@ export const KPOSERVICES = [
     color: "green",
   },
   {
-    icon: QueueListIcon,
+    icon: Logs,
     title: "List-Research",
     detailPath: "/kpo-services/list-research",
     description:
@@ -141,7 +118,7 @@ export const KPOSERVICES = [
     color: "pink",
   },
   {
-    icon: EnvelopeIcon,
+    icon: MailCheck,
     title: "B2B-Email",
     detailPath: "/kpo-services/b2b-email",
     description: "Connecting businesses through impactful emails",
@@ -152,7 +129,7 @@ export const KPOSERVICES = [
 
 export const RPOSERVICES = [
   {
-    icon: NumberedListIcon,
+    icon: ListOrdered,
     title: "Number Gathering",
     detailPath: "/rpo-services/number-gathering",
     description: "Expertly gathering numbers for informed decisions.",
@@ -160,7 +137,7 @@ export const RPOSERVICES = [
     color: "red",
   },
   {
-    icon: LightBulbIcon,
+    icon: Lightbulb,
     title: "Talent Mapping",
     detailPath: "/rpo-services/talent-mapping",
     description: "Strategically mapping talent for the right fit.",
@@ -168,7 +145,7 @@ export const RPOSERVICES = [
     color: "green",
   },
   {
-    icon: MagnifyingGlassIcon,
+    icon: Search,
     title: "Talent Sourcing",
     detailPath: "/rpo-services/talent-sourcing",
     description: "Connecting the right talent with the right opportunity.",
@@ -176,7 +153,7 @@ export const RPOSERVICES = [
     color: "indigo",
   },
   {
-    icon: ChartBarIcon,
+    icon: ChartColumnBig,
     title: "Talent Insight & Intelligence",
     detailPath: "/rpo-services/talent-insight",
     description: "Unlocking talent insights for smarter decisions.",
@@ -184,7 +161,7 @@ export const RPOSERVICES = [
     color: "orange",
   },
   {
-    icon: UsersIcon,
+    icon: UsersRound,
     title: "Diversity Hiring",
     detailPath: "/rpo-services/diversity-hiring",
     description: "Fostering diverse teams for stronger innovation.",
@@ -192,7 +169,7 @@ export const RPOSERVICES = [
     color: "blue",
   },
   {
-    icon: BriefcaseIcon,
+    icon: BriefcaseBusiness,
     title: "Executive Search Support",
     detailPath: "/rpo-services/executive-search-support",
     description: "Empowering executive search with tailored support.",
@@ -200,7 +177,7 @@ export const RPOSERVICES = [
     color: "pink",
   },
   {
-    icon: UserPlusIcon,
+    icon: UserRoundPlus,
     title: "Talent Pipeline",
     detailPath: "/rpo-services/talent-pipeline",
     description: "Building a pipeline of top-tier talent for future success.",
@@ -208,7 +185,7 @@ export const RPOSERVICES = [
     color: "maroon",
   },
   {
-    icon: ClipboardDocumentListIcon,
+    icon: FileText,
     title: "Recruitment Services",
     detailPath: "/rpo-services/recruitment-services",
     description: "Connecting the right talent with the right opportunities.",
@@ -216,7 +193,7 @@ export const RPOSERVICES = [
     color: "emerald",
   },
   {
-    icon: DocumentPlusIcon,
+    icon: FilePlus,
     title: "Talent Pooling",
     detailPath: "/rpo-services/talent-pooling",
     description: "Creating a pool of top talent for future growth.",
@@ -224,7 +201,7 @@ export const RPOSERVICES = [
     color: "purple",
   },
   {
-    icon: UserIcon,
+    icon: User,
     title: "Admin Support",
     detailPath: "/rpo-services/admin-support",
     description: "Efficient admin support to streamline your operations.",

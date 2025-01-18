@@ -1,7 +1,5 @@
-import { PlusIcon } from "@heroicons/react/24/outline";
 import smallScreen from "../image/smallscreen.png";
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 export const WhatWeDoHeader = () => {
   return (
@@ -23,10 +21,12 @@ export const AboutUsHeader = () => {
   );
 };
 
-export const WhyChooseHeader = ()=>{
-  return(
+export const WhyChooseHeader = () => {
+  return (
     <div className="mb-16">
-      <h3 className="text-center text-3xl md:text-5xl font-semibold text-black leading-tight">Why Choose us</h3>
+      <h3 className="text-center text-3xl md:text-5xl font-semibold text-black leading-tight">
+        Why Choose us
+      </h3>
     </div>
-  )
-}
+  );
+};

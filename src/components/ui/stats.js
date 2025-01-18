@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import { useCountUp } from "../../hooks/useCountUp"; 
-import {
-  DocumentCheckIcon,
-  MagnifyingGlassIcon,
-  UserCircleIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/outline";
+
+import { FileCheck, Search, User, UsersRound } from "lucide-react";
+
 
 const formatValue = (value, prefix = "") => {
   return `${value.toLocaleString("en-US", {
@@ -77,25 +74,25 @@ function Stats() {
             
             data-aos-duration="1000">
           <StatCard
-            icon={UserCircleIcon}
+            icon={User}
             title="Delighted Partners"
             endValue={300}
             prefix="+"
           />
           <StatCard
-            icon={UserGroupIcon}
+            icon={UsersRound}
             title="Team Members"
             endValue={50}
             prefix="+"
           />
           <StatCard
-            icon={MagnifyingGlassIcon}
+            icon={Search}
             title="Excellence Recognition"
             endValue={100}
             prefix="+"
           />
           <StatCard
-            icon={DocumentCheckIcon}
+            icon={FileCheck}
             title="Deliver Result"
             endValue={10}
             prefix="M"

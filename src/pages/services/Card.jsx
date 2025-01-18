@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { Tooltip } from "@nextui-org/react";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export const ServiceCard = ({
   icon: Icon,
@@ -69,7 +69,7 @@ export const ServiceCard = ({
             
             className="hover:bg-gray-100 p-2 rounded-full text-slate-500"
           >
-            <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+            <SquareArrowOutUpRight className="h-5 w-5" />
           </Link>
         </Tooltip>
       </div>

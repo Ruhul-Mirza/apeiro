@@ -3,13 +3,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import Stats from "../../components/ui/stats";
 import bg from "../../image/bgimage.png";
 import { NavLink } from "react-router-dom";
-import {
-  LightBulbIcon,
-  ShieldExclamationIcon,
-  UserGroupIcon,
-  TrophyIcon,
-  CheckCircleIcon,
-} from "@heroicons/react/24/outline";
+import { CircleCheck, Lightbulb, ShieldAlert, Trophy, UsersRound } from "lucide-react";
 
 const CompanyOverView = () => {
   return (
@@ -88,12 +82,12 @@ function CompanyAccordion() {
         <AccordionItem
           key="1"
           aria-label="Accordion 1"
-          subtitle={
-            <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reiciendis, ullam.
-            </span>
-          }
+          // subtitle={
+          //   <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
+          //     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          //     Reiciendis, ullam.
+          //   </span>
+          // }
           indicator={
             <span
               aria-hidden="true"
@@ -110,12 +104,12 @@ function CompanyAccordion() {
         <AccordionItem
           key="2"
           aria-label="Accordion 2"
-          subtitle={
-            <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Reiciendis, ullam.
-            </span>
-          }
+          // subtitle={
+          //   <span className="mt-0.5 text-medium xs:block hidden text-gray-500">
+          //     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          //     Reiciendis, ullam.
+          //   </span>
+          // }
           indicator={
             <span
               aria-hidden="true"
@@ -179,7 +173,7 @@ const CoreValueCard = () => {
           <div className="group bg-zinc-900/40 border border-zinc-900 hover:bg-zinc-900/60 hover:border-zinc-800  rounded-2xl p-8">
             <div className="flex items-center mb-4">
               <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-xl">
-                <LightBulbIcon className="w-8 h-8 text-indigo-400" />
+                <Lightbulb className="w-8 h-8 text-indigo-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white ml-4">
                 Expertise & Innovation
@@ -195,7 +189,7 @@ const CoreValueCard = () => {
           <div className="group bg-zinc-900/40 border border-zinc-900 hover:bg-zinc-900/60 hover:border-zinc-800  rounded-2xl p-8">
             <div className="flex items-center mb-4">
             <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-xl">
-                <UserGroupIcon className="w-8 h-8 text-green-400" />
+                <UsersRound className="w-8 h-8 text-green-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white ml-4">
                 Talent Excellence:
@@ -211,7 +205,7 @@ const CoreValueCard = () => {
           <div className="group bg-zinc-900/40 border border-zinc-900 hover:bg-zinc-900/60 hover:border-zinc-800  rounded-2xl p-8">
             <div className="flex items-center mb-4">
             <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-xl">
-                <ShieldExclamationIcon className="w-8 h-8 text-cyan-400" />
+                <ShieldAlert className="w-8 h-8 text-cyan-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white ml-4">
                 Integrity
@@ -262,7 +256,7 @@ const CoreValueCard = () => {
           <div className="group bg-zinc-900/40 border border-zinc-900 hover:bg-zinc-900/60 hover:border-zinc-800  rounded-2xl p-8">
             <div className="flex items-center mb-4">
             <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-xl">
-                <TrophyIcon className="w-8 h-8 text-amber-400" />
+                <Trophy className="w-8 h-8 text-amber-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white ml-4">
                 Excellence
@@ -279,7 +273,7 @@ const CoreValueCard = () => {
           <div className="group bg-zinc-900/40 border border-zinc-900 hover:bg-zinc-900/60 hover:border-zinc-800  rounded-2xl p-8">
             <div className="flex items-center mb-4">
             <div className="p-3 bg-zinc-950 border border-zinc-900 rounded-xl">
-                <CheckCircleIcon className="w-8 h-8 text-orange-400" />
+                <CircleCheck className="w-8 h-8 text-orange-400" />
               </div>
               <h3 className="text-2xl font-semibold text-white ml-4">
                 Quality & Precision

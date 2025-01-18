@@ -1,9 +1,7 @@
-// import WorldMap from "../../components/ui/world-map";
-import { motion } from "motion/react";
 import smallScreen from "../../image/smallscreen.png";
-import { ChevronRightIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import { Suspense, lazy } from "react";
+import { ChevronRight } from "lucide-react";
 const WorldMap = lazy(() => import("../../components/ui/world-map"));
 export default function AboutPage() {
   return (
@@ -145,7 +143,7 @@ const OurTeam = () => {
               <div>
                 <button className="mt-5 md:text-medium text-sm md:px-5 md:py-3 py-2 px-3 tracking-wide flex items-center gap-2 rounded-full text-white bg-black/90 hover:bg-black/100 font-bold">
                   <NavLink to="/contact">Know More</NavLink>
-                  <ChevronRightIcon className="h-5 w-5" />
+                  <ChevronRight className="h-5 w-5" />
                 </button>
               </div>
             </div>
@@ -193,24 +191,3 @@ const OurTeam = () => {
   );
 };
 
-// const AboutCard = ({ name, role, color,number }) => {
-
-//   return (
-//     <div
-//       className={`border border-zinc-200 tracking-wide rounded-xl p-5 cursor-pointer  bg-white ${cardthemes[color]}`}
-//     >
-//       <div className="flex gap-6">
-//         {/* <div className="flex items-center justify-center h-12 w-12 bg-gray-100 rounded-full">
-//           <UserCircleIcon className="h-6 w-6 text-gray-500" />
-//         </div> */}
-//         <div className="flex flex-col">
-//           <div className="text-gray-700 text-sm md:text-base font-semibold">
-//             {name}
-//           </div>
-//           <div className="text-gray-500 text-xs">{role}</div>
-//           <div className="text-gray-500 text-xs">{number}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };

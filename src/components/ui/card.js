@@ -1,5 +1,5 @@
 import React from "react";
-import {UserIcon } from "@heroicons/react/24/outline";
+import { User } from "lucide-react";
 
 export const AboutCard = ({ icon: Icon, title,color }) => {
   const cardthemes ={
@@ -38,7 +38,7 @@ export const TestimonialCard = ({ quote,name, isActive }) => (
         <div className="flex w-full rounded-lg overflow-hidden">
           <button className="p-1.5 rounded-full bg-slate-200">
 
-          <UserIcon className="h-5 w-5"/>
+          <User className="h-5 w-5"/>
           </button>
         </div>
         <div className="font-semibold capitalize">

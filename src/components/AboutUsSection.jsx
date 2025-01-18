@@ -1,35 +1,29 @@
 import React from "react";
 import { AboutUsHeader } from "./AllHeader";
-import {
-  EyeIcon,
-  HandThumbUpIcon,
-  MagnifyingGlassCircleIcon,
-  PhoneIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/outline";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { AboutCard } from "./ui/card";
-import { color } from "framer-motion";
+import { NavLink } from "react-router-dom";
+import { ChevronRight, Eye, Handshake, Phone, UsersRound } from "lucide-react";
+
 
 const AboutUsSection = () => {
   const aboutCards = [
     {
-      icon: EyeIcon,
+      icon: Eye,
       title: "Mission & Vision",
       color: "red",
     },
     {
-      icon: UserGroupIcon,
+      icon: UsersRound,
       title: "Expert Team Member",
       color: "green",
     },
     {
-      icon: HandThumbUpIcon,
+      icon: Handshake,
       title: "Top Collaboration",
       color: "blue",
     },
     {
-      icon: PhoneIcon,
+      icon: Phone,
       title: "Professional Support",
       color: "pink",
     },
@@ -60,8 +54,8 @@ const AboutUsSection = () => {
             </p>
             <div>
               <button className="mt-5 tracking-wide flex items-center gap-2 px-5 py-3 rounded-full text-white bg-black/90 hover:bg-black/100 font-bold">
-                <a href="#">Know more</a>
-                <ChevronRightIcon className="h-5 w-5" />
+                <NavLink to="/about">Know more</NavLink>
+                <ChevronRight className="h-5 w-5" />
               </button>
             </div>
           </div>

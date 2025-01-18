@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useParams } from "react-router-dom";
 import image from  "../../image/Image.jpg"
 import { serviceDetails } from "../../lib/utils2";
-import { CheckCircleIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
+import { CircleCheck, ShieldCheck } from "lucide-react";
 
 function ServiceDetail() {
   const { serviceId } = useParams();
@@ -31,7 +31,7 @@ function ServiceDetail() {
           {/* Content Section */}
           <div className="content-section p-8 md:p-12">
             <div className="service-title flex items-center gap-2 mb-6">
-              <ShieldCheckIcon className="w-8 h-8 text-blue-600" />
+              <ShieldCheck className="w-8 h-8 text-blue-600" />
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
                 {service.title}
               </h1>
@@ -44,7 +44,7 @@ function ServiceDetail() {
             <div className="service-points space-y-4">
               {service.points.map((point, index) => (
                 <div key={index} className="point flex items-start gap-3">
-                  <CheckCircleIcon className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5 md:w-6 md:h-6" />
+                  <CircleCheck className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5 md:w-6 md:h-6" />
                   <p className="md:text-medium text-sm text-gray-700">{point.content}</p>
                 </div>
               ))}

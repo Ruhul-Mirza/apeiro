@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import largeScreen from "../image/largescreen.png";
 import smallScreen from "../image/smallscreen.png";
 import { CompanyDropdownItems ,ServicesDropdownItems} from "../lib/utils";
-import { Bars3Icon } from "@heroicons/react/24/outline";
 
 import {
   Dropdown,
@@ -14,6 +13,7 @@ import {
 } from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
 import Dropdowns from "./ui/dropdown";
+import { MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -22,14 +22,14 @@ const Header = () => {
         {/* Logo and Menu for Small Screens */}
         <div className="icon flex items-center">
           <span className="sm:hidden items-center flex">
-            <Dropdown className="mt-2">
+            <Dropdown className="mt-4">
               <DropdownTrigger>
-                <Bars3Icon className="text-lg h-6 w-6 mx-1 text-zinc-600" />
+                <MenuIcon className="text-lg h-6 w-6 mx-1 text-zinc-600" />
               </DropdownTrigger>
               <DropdownMenu variant="light" aria-label="Static Actions">
                 <DropdownSection showDivider>
-                  <DropdownItem key="home" className="border-none">
-                    <NavLink to="">Home</NavLink>
+                  <DropdownItem key="home" href="/" className="border-none">
+                    Home
                   </DropdownItem>
                 </DropdownSection>
                 <DropdownSection showDivider title="Menu">

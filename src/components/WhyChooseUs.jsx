@@ -1,36 +1,36 @@
 import React from 'react';
-import {PuzzlePieceIcon, RocketLaunchIcon, TrophyIcon, CogIcon, LifebuoyIcon, WalletIcon } from '@heroicons/react/24/outline';
 import { WhyChooseHeader } from './AllHeader';
+import { Cog, LifeBuoy, Puzzle, Rocket, Trophy, Wallet } from 'lucide-react';
 
 // Card data array with Heroicons
 const cardData = [
   {
-    icon: <WalletIcon className="h-8 w-8 text-gray-500" />,
+    icon: <Wallet className="h-8 w-8 text-gray-500" />,
     title: "Prioritize Budget",
     description: "We provide high-quality services that fit your budget, offering scalable solutions without compromising on excellence."
   },
   {
-    icon: <PuzzlePieceIcon className="h-8 w-8 text-gray-500" />,
+    icon: <Puzzle className="h-8 w-8 text-gray-500" />,
     title: "Expertise Across Industries",
     description: "We specialize in talent mapping, executive search, KPO services, and more, offering tailored solutions for diverse industries."
   },
   {
-    icon: <RocketLaunchIcon className="h-8 w-8 text-gray-500" />,
+    icon: <Rocket className="h-8 w-8 text-gray-500" />,
     title: "Innovative Solutions",
     description: "We leverage cutting-edge technologies and data-driven insights to deliver smarter, more efficient results."
   },
   {
-    icon: <TrophyIcon className="h-8 w-8 text-gray-500" />,
+    icon: <Trophy className="h-8 w-8 text-gray-500" />,
     title: "Commitment to Quality",
     description: "We ensure high-quality service, from sourcing top talent to providing reliable data management and administrative support."
   },
   {
-    icon: <CogIcon className="h-8 w-8 text-gray-500" />,
+    icon: <Cog className="h-8 w-8 text-gray-500" />,
     title: "Customized Approach",
     description: "Our solutions are personalized to meet your unique business needs, driving optimal performance and growth."
   },
   {
-    icon: <LifebuoyIcon className="h-8 w-8 text-gray-500" />,
+    icon: <LifeBuoy className="h-8 w-8 text-gray-500" />,
     title: "Dedicated Support",
     description: "We offer continuous support, ensuring seamless execution and a collaborative partnership at every stage."
   }
