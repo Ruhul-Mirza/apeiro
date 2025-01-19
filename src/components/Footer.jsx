@@ -236,7 +236,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <p className="mt-8 text-center text-xs text-gray-500">
-          &copy; 2022. Apeiro Research. All rights reserved.
+          <span>&copy; 2022. Apeiro Research. All rights reserved. <NavLink to="/privacy-policy" className="text-blue-600 underline">Privacy Policy</NavLink></span>
         </p>
       </div>
     </footer>

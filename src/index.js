@@ -16,19 +16,20 @@ import KpoServices from "./pages/services/KpoServices";
 import RpoServices from "./pages/services/RpoServices"
 import Contact from "./pages/Contact/Contact";
 import ServiceDetail from "./pages/services/ServiceDetail";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-
       <Route path="about" element={<AboutPage />} />
       <Route path="rpo-services" element={<RpoServices/>}/>
       <Route path="kpo-services" element={<KpoServices/>}/>
       <Route path="kpo-services/:serviceId" element={<ServiceDetail/>}/> 
        <Route path="rpo-services/:serviceId" element={<ServiceDetail/>}/>
       <Route path="why-us" element={<WhyUs />}></Route>
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
       <Route path="company-overview" element={<CompanyOverView />}></Route>
       <Route path="contact" element={<Contact />}></Route>
     </Route>
