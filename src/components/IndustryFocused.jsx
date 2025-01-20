@@ -1,11 +1,11 @@
 import React from 'react';
-import { Plane, Factory, Car, Bus, Building2, FlaskRound } from 'lucide-react';
+import { Factory, Car , Building2, FlaskRound, Code, ShoppingCart } from 'lucide-react';
 
 const industries = [
   {
-    icon: Plane,
-    name: 'Aerospace',
-    description: 'Advanced solutions for aviation and space technology'
+    icon: Code,
+    name: 'IT & Development',
+    description: 'Tailored IT and Software Solutions for a Smarter Future'
   },
   {
     icon: Factory,
@@ -18,9 +18,9 @@ const industries = [
     description: 'Next-generation automotive technologies'
   },
   {
-    icon: Bus,
-    name: 'Transit',
-    description: 'Modern public transportation systems'
+    icon: ShoppingCart,
+    name: 'FMCG',
+    description: 'Driving Growth with Agile Solutions for the Fast-Moving Consumer Goods Industry'
   },
   {
     icon: Building2,

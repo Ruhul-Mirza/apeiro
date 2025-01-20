@@ -81,7 +81,7 @@ const CompanyOverView = () => {
 };
 
 function CompanyAccordion() {
-  const [selectedKeys, setSelectedKeys] = useState(["1"]);
+  
   const missionContent =
     "Our mission is to deliver exceptional RPO and KPO services that empower businesses to unlock their full potential. By combining industry expertise, innovative solutions, and cutting-edge technology, we aim to streamline recruitment and knowledge processes, driving efficiency, scalability, and long-term success for our clients. We are committed to fostering strong partnerships, delivering personalized support, and continuously improving our services to exceed client expectations. Our goal is to be the trusted partner of choice, helping organizations build top-tier teams, make informed decisions, and achieve sustainable growth in a dynamic business landscape.";
 
@@ -95,8 +95,8 @@ function CompanyAccordion() {
       data-aos-duration="1300"
     >
       <Accordion
-        selectedKeys={selectedKeys}
-        onSelectionChange={setSelectedKeys}
+          
+        
       >
         <AccordionItem
           key="1"
