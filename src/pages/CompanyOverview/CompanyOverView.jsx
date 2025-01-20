@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import React, { useState } from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Stats from "../../components/ui/stats";
@@ -7,6 +8,23 @@ import { CircleCheck, Lightbulb, ShieldAlert, Trophy, UsersRound } from "lucide-
 
 const CompanyOverView = () => {
   return (
+    <>
+    <Helmet>
+  <title>Company Overview - Apeiro Research</title>
+  <meta name="description" content="Learn more about Apeiro Research, our mission, vision, and the innovative research solutions we provide to empower businesses." />
+  <link rel="canonical" href="https://www.apeiroresearch.com/company-overview" />
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.apeiroresearch.com/company-overview",
+        "name": "Apeiro Research",
+        "description": "Apeiro Research provides innovative data analytics and research solutions to empower businesses.",
+      }
+    `}
+  </script>
+</Helmet>
     <div className="overflow-hidden min-h-screen">
       <div
         className="relative mb-auto flex w-screen flex-col overflow-hidden pt-40 pb-20"
@@ -58,6 +76,7 @@ const CompanyOverView = () => {
       <CoreValueCard />
       <Stats />
     </div>
+    </>
   );
 };
 

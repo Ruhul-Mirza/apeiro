@@ -1,18 +1,35 @@
+import { Helmet } from 'react-helmet';
 import React from "react";
-
 import { ArrowUpRight, ChartColumnBig, Lightbulb, Puzzle, RefreshCw, UsersRound } from "lucide-react";
 
 function WhyUs() {
   return (
+    <>
+    <Helmet>
+        <title>Why Choose Us - Apeiro Research</title>
+        <meta name="description" content="Learn why Apeiro Research is the best choice for your business research and data analytics needs." />
+        <link rel="canonical" href="https://www.apeiroresearch.com/why-us" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "url": "https://www.apeiroresearch.com/why-us",
+              "name": "Why Choose Us - Apeiro Research",
+              "description": "Learn why Apeiro Research is the best choice for your business research and data analytics needs."
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="min-h-screen bg-white mt-12 px-12">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Section */}
           <div data-aos="fade-down" data-aos-duration="1300">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-8">
+            <h1 className="text-2xl font-semibold text-gray-900 mb-8">
               Our Strategic Approach
-            </h2>
+            </h1>
             <p className="text-gray-600 leading-relaxed mb-6">
               At Apeiro Research, our strategic approach is designed to deliver tailored, high-performance solutions that meet the unique needs of each client. We focus on blending industry-leading expertise, innovative methodologies, and cutting-edge technology to drive superior outcomes in RPO and KPO services. Our goal is to build long-term partnerships and help businesses scale, innovate, and thrive.
             </p>
@@ -138,6 +155,7 @@ function WhyUs() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

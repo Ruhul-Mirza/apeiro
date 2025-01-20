@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, useParams } from "react-router-dom";
 import image from  "../../image/Image.jpg"
 import { serviceDetails } from "../../lib/utils2";
+import { Helmet } from 'react-helmet';
 import { CircleCheck, ShieldCheck } from "lucide-react";
 
 function ServiceDetail() {
@@ -13,6 +14,23 @@ function ServiceDetail() {
   }
 
   return (
+    <>
+<Helmet>
+  <title>{`Service Detail - ${serviceId} - Apeiro Research`}</title>
+  <meta name="description" content={`Details of the ${serviceId} service offered by Apeiro Research.`} />
+  <link rel="canonical" href={`https://www.apeiroresearch.com/kpo-services/${serviceId}`} />
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "url": "https://www.apeiroresearch.com/kpo-services/${serviceId}",
+        "name": "Service Detail - ${serviceId}",
+        "description": "Details of the ${serviceId} service offered by Apeiro Research."
+      }
+    `}
+  </script>
+</Helmet>
     <div className="service-detail mt-16" data-aos="zoom-in-up"
     data-aos-duration="1300">
     <div className="container mx-auto px-4 py-16 max-w-6xl">
@@ -60,6 +78,7 @@ function ServiceDetail() {
       </div>
     </div>
   </div>
+  </>
   );
 }
 

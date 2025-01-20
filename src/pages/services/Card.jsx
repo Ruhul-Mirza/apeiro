@@ -38,6 +38,7 @@ export const ServiceCard = ({
   };
   const [isOpen, setIsOpen] = useState(false);
   return (
+    <Link to={detailPath}>
     <div className={`flex cursor-pointer flex-col justify-between gap-5 rounded-2xl bg-white p-5 pb-2 border ${borderthemes[color]}`} >
       <div className="flex gap-4 flex-col-reverse md:flex-row justify-between">
         <div className="flex flex-col gap-1">
@@ -64,15 +65,16 @@ export const ServiceCard = ({
           isOpen={isOpen}
           onOpenChange={(open) => setIsOpen(open)}
         >
-          <Link
-            to={detailPath}
+          <button
+            
             
             className="hover:bg-gray-100 p-2 rounded-full text-slate-500"
           >
             <SquareArrowOutUpRight className="h-5 w-5" />
-          </Link>
+          </button>
         </Tooltip>
       </div>
     </div>
+    </Link>
   );
 };

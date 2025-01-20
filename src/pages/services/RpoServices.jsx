@@ -1,10 +1,28 @@
-import { React, useState } from "react"
+import { Helmet } from 'react-helmet';
+import { React } from "react"
 import { RPOSERVICES } from "../../lib/utils";
 import { ServiceCard } from "./Card";
 import { RpoServicesHeading } from "./ServicesHeading";
 
 const RpoServices = () => {
   return (
+    <>
+    <Helmet>
+        <title>RPO Services - Apeiro Research</title>
+        <meta name="description" content="Explore Apeiro Research's RPO services to streamline your recruitment processes." />
+        <link rel="canonical" href="https://www.apeiroresearch.com/rpo-services" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "url": "https://www.apeiroresearch.com/rpo-services",
+              "name": "RPO Services - Apeiro Research",
+              "description": "Explore Apeiro Research's RPO services to streamline your recruitment processes."
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="bg-gray-50 bg-opacity-75">
       <RpoServicesHeading />
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden"   data-aos="fade-down"
@@ -31,6 +49,7 @@ const RpoServices = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

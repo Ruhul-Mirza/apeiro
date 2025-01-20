@@ -1,8 +1,26 @@
+import { Helmet } from 'react-helmet';
 import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
+    <>
+     <Helmet>
+        <title>Contact Us - Apeiro Research</title>
+        <meta name="description" content="Get in touch with Apeiro Research for your business research and data analytics needs." />
+        <link rel="canonical" href="https://www.apeiroresearch.com/contact" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "url": "https://www.apeiroresearch.com/contact",
+              "name": "Contact Us - Apeiro Research",
+              "description": "Get in touch with Apeiro Research for your business research and data analytics needs."
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="min-h-screen bg-white mt-28 px-8">
       {/* Hero Section */}
       <div className="relative">
@@ -58,7 +76,7 @@ const Contact = () => {
         </div>
       </div>
       {/* Company Stats Section */}
-      <div className="pt-16">
+      <div className="py-16">
         <h3 className="text-4xl font-medium text-center text-gray-900 my-8">
           Company Stats
         </h3>
@@ -74,6 +92,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

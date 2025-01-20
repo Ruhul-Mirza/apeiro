@@ -1,11 +1,30 @@
+import { Helmet } from 'react-helmet';
 import smallScreen from "../../image/smallscreen.png";
 import { NavLink } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import { ChevronRight } from "lucide-react";
 const WorldMap = lazy(() => import("../../components/ui/world-map"));
+
+
 export default function AboutPage() {
   return (
     <>
+      <Helmet>
+        <title>About Us - Apeiro Research</title>
+        <meta name="description" content="Learn more about Apeiro Research and how we help businesses grow with innovative research solutions." />
+        <link rel="canonical" href="https://www.apeiroresearch.com/about" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "url": "https://www.apeiroresearch.com/about",
+              "name": "About Us - Apeiro Research",
+              "description": "Learn more about Apeiro Research and how we help businesses grow with innovative research solutions."
+            }
+          `}
+        </script>
+      </Helmet>
       <AboutUs />
       <OurTeam />
     </>
@@ -22,9 +41,9 @@ function AboutUs() {
         <p className="font-semibold tracking-wider text-lg md:text-2xl m-2 mb-6 md:mb-8 uppercase dark:text-gray-300 inline-block text-neutral-400 border-b-3 pb-1 border-neutral-300">
           About Us
         </p>
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
+        <h1 className="font-bold text-xl md:text-4xl dark:text-white text-black">
           Apeiro <span className="text-neutral-400">Research</span>
-        </p>
+        </h1>
         <p className="text-sm md:text-lg px-2 text-neutral-500 max-w-2xl mx-auto py-4">
           We provide global KPO and RPO services with a skilled team, driving
           success and growth worldwide

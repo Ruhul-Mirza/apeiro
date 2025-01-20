@@ -1,12 +1,29 @@
-import { React, useState } from "react"
+import { Helmet } from 'react-helmet';
+import { React } from "react"
 import { KPOSERVICES } from "../../lib/utils";
-
 import { KpoServicesHeading } from "./ServicesHeading";
 import { ServiceCard } from "./Card";
 
 const KpoServices = () => {
   
   return (
+    <>
+    <Helmet>
+        <title>KPO Services - Apeiro Research</title>
+        <meta name="description" content="Explore Apeiro Research's KPO services including data analytics, research, and more." />
+        <link rel="canonical" href="https://www.apeiroresearch.com/kpo-services" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "url": "https://www.apeiroresearch.com/kpo-services",
+              "name": "KPO Services - Apeiro Research",
+              "description": "Explore Apeiro Research's KPO services including data analytics, research, and more."
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="bg-gray-50 bg-opacity-75">
       <KpoServicesHeading />
       <div className="container relative mx-auto px-4 pb-1 overflow-x-hidden">
@@ -33,6 +50,7 @@ const KpoServices = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

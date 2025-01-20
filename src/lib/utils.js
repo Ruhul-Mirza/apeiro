@@ -210,10 +210,7 @@ export const RPOSERVICES = [
   },
 ];
 export const CompanyDropdownItems = [
-  {
-    title: "About",
-    href: "/about",
-  },
+
   {
     title: "Why Us",
     href: "/why-us",

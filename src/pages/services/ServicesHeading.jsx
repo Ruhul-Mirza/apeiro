@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export function KpoServicesHeading() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-hidden pt-12" data-aos="zoom-in" data-aos-duration="1300">
+    <div className="relative flex min-h-80vh w-full flex-col overflow-hidden pt-40" data-aos="zoom-in" data-aos-duration="1300">
       <main className="container mx-auto flex flex-1 flex-col items-center justify-center px-4 sm:px-8">
         <section className="z-20 flex flex-col items-center justify-center gap-4 sm:gap-6">
           {/* Button */}
@@ -27,15 +27,14 @@ export function KpoServicesHeading() {
 
           {/* Main Heading */}
           <div className="text-center text-[clamp(32px,8vw,44px)] font-bold leading-tight tracking-tight sm:text-[64px]">
-            <div className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] bg-clip-text text-transparent">
+            <h1 className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] bg-clip-text text-transparent">
               KPO Services
-            </div>
+            </h1>
           </div>
 
           {/* Subheading */}
           <p className="max-w-[90%] text-center text-sm font-normal leading-6 text-default-500 sm:max-w-[466px] sm:text-base sm:leading-7">
-            
-            Your Trusted Partner for Expertise-Focused Outsourcing.
+            Your Trusted Partner In Global Talent Acquisition.
           </p>
 
           {/* Buttons */}
@@ -70,9 +69,7 @@ export function KpoServicesHeading() {
 }
 export function RpoServicesHeading() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-hidden pt-12"   data-aos="zoom-in"
-    
-    data-aos-duration="1300">
+    <div className="relative flex min-h-80vh w-full flex-col overflow-hidden pt-40" data-aos="zoom-in" data-aos-duration="1300">
       <main className="container mx-auto flex flex-1 flex-col items-center justify-center px-4 sm:px-8">
         <section className="z-20 flex flex-col items-center justify-center gap-4 sm:gap-6">
           {/* Button */}
@@ -93,9 +90,9 @@ export function RpoServicesHeading() {
 
           {/* Main Heading */}
           <div className="text-center text-[clamp(32px,8vw,44px)] font-bold leading-tight tracking-tight sm:text-[64px]">
-            <div className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] bg-clip-text text-transparent">
+            <h1 className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] bg-clip-text text-transparent">
               RPO Services
-            </div>
+            </h1>
           </div>
 
           {/* Subheading */}

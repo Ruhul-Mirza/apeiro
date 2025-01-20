@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-200">
       <div className="px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-28">
           {/* Logo and Description */}
@@ -12,15 +12,17 @@ const Footer = () => {
             <div className="text-teal-600">
               <img src={largeScreen} alt="Apeiro Logo" className="w-40" />
             </div>
-            <p className="mt-4 text-left text-gray-500">
+            <p className="mt-4 text-left text-gray-700">
               The Ultimate Destination Of Research.
             </p>
             {/* Social Icons */}
             <ul className="mt-6 flex space-x-2">
-             
-
               <li>
-                <a href=" https://wa.me/919082704714" target="_blank" rel="noopener noreferrer">
+                <a
+                  href=" https://wa.me/919082704714"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="sr-only">WhatsApp</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +57,11 @@ const Footer = () => {
               </li>
 
               <li>
-                <a href="https://www.linkedin.com/company/apeiro-research-pvt-ltd/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/company/apeiro-research-pvt-ltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="sr-only">LinkedIn</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +81,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/apeiro.research/?hl=en" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/apeiro.research/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="sr-only">Instagram</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +146,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/profile.php?id=61570954210901" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61570954210901"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="sr-only">FaceBook</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -180,14 +194,16 @@ const Footer = () => {
           </div>
 
           {/* Services Section */}
-          <div className="flex flex-col justify-start gap-4 sm:flex-row lg:justify-end sm:space-x-28">
+          <div className="flex flex-col justify-start gap-6 sm:gap-4 sm:flex-row lg:justify-end sm:space-x-20">
             <div>
-              <p className="font-medium text-gray-900">Services</p>
-              <ul className="mt-4 space-y-3 text-sm">
+              <p className="font-bold text-black border-b-2 border-blue-700 inline-block pb-1">
+                Services
+              </p>
+              <ul className="mt-4 space-y-3 text-sm font-medium">
                 <li>
                   <NavLink
                     to="/kpo-services"
-                    className="text-gray-400 transition hover:text-black"
+                    className="text-black transition hover:underline"
                   >
                     Kpo Service
                   </NavLink>
@@ -195,7 +211,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     to="/rpo-services"
-                    className="text-gray-400 transition hover:text-black"
+                    className="text-black transition hover:underline"
                   >
                     Rpo Service
                   </NavLink>
@@ -203,12 +219,15 @@ const Footer = () => {
               </ul>
             </div>
             <div className="pr-6">
-              <p className="font-medium text-gray-900">Company</p>
-              <ul className="mt-4 space-y-3 text-sm">
+              <p className="font-bold text-black border-b-2 border-blue-700 inline-block pb-1">
+                Navigation
+              </p>
+
+              <ul className="mt-4 space-y-3 font-medium text-sm">
                 <li>
                   <NavLink
                     to="/about"
-                    className="text-gray-400 transition hover:text-black"
+                    className="text-black transition hover:underline"
                   >
                     About
                   </NavLink>
@@ -216,7 +235,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     to="/why-us"
-                    className="text-gray-400 transition hover:text-black"
+                    className="text-black transition hover:underline"
                   >
                     Why us
                   </NavLink>
@@ -224,7 +243,7 @@ const Footer = () => {
                 <li>
                   <NavLink
                     to="/company-overview"
-                    className="text-gray-400 transition hover:text-black"
+                    className="text-black transition hover:underline"
                   >
                     Company Overview
                   </NavLink>
@@ -235,8 +254,13 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <p className="mt-8 text-center text-xs text-gray-500">
-          <span>&copy; 2022. Apeiro Research. All rights reserved. <NavLink to="/privacy-policy" className="text-blue-600 underline">Privacy Policy</NavLink></span>
+        <p className="mt-8 text-center text-xs text-gray-700">
+          <span>
+            &copy; 2022. Apeiro Research. All rights reserved.{" "}
+            <NavLink to="/privacy-policy" className="text-blue-700 underline">
+              Privacy Policy
+            </NavLink>
+          </span>
         </p>
       </div>
     </footer>
