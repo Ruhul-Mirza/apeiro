@@ -63,9 +63,9 @@ function IndustryFocused() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl text-[#2D3748] font-semibold mb-2">
+                  <h2 className="text-xl text-[#2D3748] font-semibold mb-2">
                     {industry.name}
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {industry.description}
                   </p>
