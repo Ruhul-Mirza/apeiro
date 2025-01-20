@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import largeScreen from "../image/largescreen.png";
 import smallScreen from "../image/smallscreen.png";
 import { CompanyDropdownItems ,ServicesDropdownItems} from "../lib/utils";
@@ -9,7 +9,6 @@ import {
   DropdownMenu,
   DropdownItem,
   DropdownSection,
-  Button,
 } from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
 import Dropdowns from "./ui/dropdown";
