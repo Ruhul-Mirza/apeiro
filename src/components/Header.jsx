@@ -100,7 +100,7 @@ const Header = () => {
         {/* Button */}
 
         <NavLink to="/contact"> 
-        <button type="button" className="py-1.5 px-3.5 text-sm font-medium rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 ">Reach Out</button>
+        <button className="py-2 px-3 text-sm font-medium rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 ">Reach Out</button>
 
         </NavLink>
       </div>
