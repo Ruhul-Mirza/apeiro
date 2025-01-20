@@ -9,7 +9,7 @@ export const BackgroundLines = ({
 }) => {
   return (
     (<div
-      className={cn("h-[20rem] md:h-screen w-full bg-white dark:bg-black", className)}  data-aos="fade-up"
+      className={cn("h-[20rem] md:h-80vh w-full bg-white dark:bg-black", className)}  data-aos="fade-up"
       
       data-aos-duration="1300">
       <SVG svgOptions={svgOptions} />
