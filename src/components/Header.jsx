@@ -9,6 +9,7 @@ import {
   DropdownMenu,
   DropdownItem,
   DropdownSection,
+  Button,
 } from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
 import Dropdowns from "./ui/dropdown";
@@ -99,7 +100,7 @@ const Header = () => {
         {/* Button */}
 
         <NavLink to="/contact"> 
-        <button className="py-2 px-3 text-sm font-medium rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 ">Reach Out</button>
+        <button type="button" className="py-2 px-3.5 text-sm font-medium focus:outline-none rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Reach Out</button>
 
         </NavLink>
       </div>
