@@ -100,11 +100,8 @@ const Header = () => {
         {/* Button */}
 
         <NavLink to="/contact"> 
-        <button type="button" className="py-2 px-3.5 text-sm font-medium focus:outline-none rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Reach Out</button>
-        {/* <button className="border px-3.5  py-1.5 rounded-full shadow-sm border-zinc-200 hover:bg-gray-100 text-sm font-medium">
+        <button type="button" className="py-1.5 px-3.5 text-sm font-medium rounded-full border border-gray-200 text-white bg-blue-700/80 hover:bg-blue-700 ">Reach Out</button>
 
-          Reach Out
-        </button> */}
         </NavLink>
       </div>
     </header>
