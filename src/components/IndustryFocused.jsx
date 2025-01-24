@@ -36,7 +36,7 @@ const industries = [
 
 function IndustryFocused() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-20">
+    <div className="min-h-screen bg-gradient-to-b mt-16 mb-20 from-gray-50 to-gray-100 py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-sm uppercase tracking-wider text-warning-600 font-semibold mb-3">
@@ -48,7 +48,8 @@ function IndustryFocused() {
           </h1>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16" data-aos="fade-down"
+            data-aos-duration="800">
           {industries.map((industry) => {
             const Icon = industry.icon;
             return (
