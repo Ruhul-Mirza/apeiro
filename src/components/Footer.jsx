@@ -205,7 +205,7 @@ const Footer = () => {
                     to="/kpo-services"
                     className="text-black transition hover:underline"
                   >
-                    Kpo Service
+                    Kpo Services
                   </NavLink>
                 </li>
                 <li>
@@ -213,7 +213,7 @@ const Footer = () => {
                     to="/rpo-services"
                     className="text-black transition hover:underline"
                   >
-                    Rpo Service
+                    Rpo Services
                   </NavLink>
                 </li>
               </ul>

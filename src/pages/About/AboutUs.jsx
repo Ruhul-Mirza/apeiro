@@ -103,26 +103,13 @@ const OurTeam = () => {
       color: "blue",
     },
     {
-      name: "Muzaffar Khatri",
-      role: "Business Development Manager",
-      number: "+91 87799 15183",
-      linkedin: "https://www.linkedin.com/in/muzaffar-khatri-5b685323a",
+      name: "Shaikh Kaif",
+      role: "Head of Operations",
+      number: "+91 91365 63434",
+      linkedin: "https://www.linkedin.com/in/shaikh-kaif-9b565732b/",
       color: "red",
     },
-    {
-      name: "Aslan Shaikh",
-      role: "Head of Operation & Sales",
-      number: "+91 99678 10464",
-      linkedin: "https://www.linkedin.com/in/aslan-shaikh-179925230/",
-      color: "orange",
-    },
-    {
-      name: "Zuaid Shaikh",
-      role: "Research Manager",
-      number: "+91 98335 31730",
-      color: "pink",
-      linkedin: "https://www.linkedin.com/in/zuaid-shaikh-390948255/",
-    },
+
   ];
   const cardthemes = {
     pink: "hover:border-pink-400",

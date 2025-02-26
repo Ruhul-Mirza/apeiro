@@ -1,3 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow:
+Allow: /
+
+# Allow Googlebot to crawl JavaScript, CSS, and API calls
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.json$
+
+# Sitemap (replace with your actual sitemap URL)
+Sitemap: https://apeiroresearch.com/sitemap.xml
