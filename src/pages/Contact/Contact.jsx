@@ -34,9 +34,9 @@ const Contact = () => {
     try {
       const emailData = {
         apikey:
-          "6EE95A12A1143DC98F0E02D466A45EEA4E6375C994BFFFEC7C576A3C462B99606785E383D4F1D1883AB2E4CD92D0AC16",
-        from: "aounmirza10@gmail.com",
-        to: "aounmirza10@gmail.com",
+          "BF0425CAE3DDC0AEC81C07F503513D745223645D9EC1D051B91457401C2F3FEEC3569D8CCFE52B6C0990E9820620E9DD",
+        from: "aoun@apeiroresearch.com",
+        to: "aoun@apeiroresearch.com",
         subject: "New Form Submitted",
         bodyHtml: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -344,6 +344,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          
         </section>
       </div>
     </>
