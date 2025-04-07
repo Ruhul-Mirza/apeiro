@@ -7,9 +7,7 @@ import {
   MapPin,
   Send,
   ArrowRight,
-  ExternalLink,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -353,24 +351,3 @@ const Contact = () => {
 
 export default Contact;
 
-{
-  /* <div className="lg:sticky lg:top-8">
-            <div className="bg-gray-50 border border-gray-100">
-              <div className="py-12 px-6">
-                <div className="flex items-center justify-between mb-8">
-                  <h2 className="text-xl font-medium text-gray-900">Contact Form</h2>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6GW5jA7lHiurSpbcy_M-WbcksxvgB8yjWXUJtXkU-U0rpRw/viewform?embedded=true" target="_blank"><SquareArrowOutUpRight className="h-5 w-5 text-gray-400" /></a>
-                </div>
-                <div>
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSe6GW5jA7lHiurSpbcy_M-WbcksxvgB8yjWXUJtXkU-U0rpRw/viewform?embedded=true" 
-                    className="w-full h-[600px] border-0 bg-white"
-                    title="Contact Form"
-                  >
-                    Loading...
-                  </iframe>
-                </div>
-              </div>
-            </div>
-          </div> */
-}
