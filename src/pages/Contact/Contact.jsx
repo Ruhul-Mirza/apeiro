@@ -176,6 +176,7 @@ const Contact = () => {
                           Email
                         </h3>
                         <p className="text-gray-500">aoun@apeiroresearch.com</p>
+                        <p className="text-gray-500">kaif@apeiroresearch.com</p>
                       </div>
                     </div>
                   </div>
